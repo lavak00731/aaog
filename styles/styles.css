@@ -146,6 +146,79 @@
         max-width: 100%;
         height: auto;
     }
+    a {
+      color: var(--interactive-color);
+    }
+    a:focus-visible {
+      background-color: var(--interactive-color);
+      color: var(--white-color);
+      outline: none;
+    }
+    button, input[type="submit"] {
+      color: var(--white-color);
+      background-color: var(--interactive-color);
+      padding: 1rem 2rem;
+      border-color: transparent;
+      border-radius: 0.25rem;
+      font-weight: 700;
+      border-width: 0.125rem;
+    }
+    button, input[type="submit"] {
+      color: var(--interactive-color);
+      background-color: var(--white-color);
+      border-color: var(--interactive-color);
+    }
+    /* Header */
+    header {
+      background: var(--light-bg);
+      padding: 1rem;
+    }
+    header figure {
+      width: 6rem; 
+      margin: 0 auto 1rem;
+    }
+    header figure img {
+      border-radius: 50%;
+    }
+    /* navigation */
+    .aaog-menu-opener {
+      width: 100%;
+      position: relative
+    }
+    .aaog-menu-opener svg {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 2rem;
+    }
+    .aaog-menu-opener[aria-expanded="true"] .middle {
+      x: 0;
+      opacity: 0;
+    }
+    .aaog-menu-opener[aria-expanded="true"] .top {
+      transform: rotate(45deg);
+      transform-origin: center;      
+      x: 4px;
+      y: 13px;
+    }
+    .aaog-menu-opener[aria-expanded="true"] .bottom {
+      transform: rotate(-45deg);
+      transform-origin: center;
+      x: 2px;
+      y: 14px;
+    }
+    nav {
+      position: fixed;
+      top: 10rem;
+      left: 0;
+      right: 0;
+      background-color: var(--light-bg);
+      padding: 1rem;
+      display: none;
+    }
+    .aaog-menu-opener[aria-expanded="true"] + nav {
+      display: block;
+    }
   /* animations */
   @media (prefers-reduced-motion: no-preference) {
     html {
@@ -154,17 +227,10 @@
     .aaog-skip-link {
         transition: margin 0.3s;    
     }
+    .aaog-menu-opener[aria-expanded="true"] .top,
+    .aaog-menu-opener[aria-expanded="true"] .bottom {
+      transition: transform 1s;
+    }
   }
   
-  /* Header */
-  header {
-    background: var(--light-bg);
-    padding: 1rem;
-  }
-  header figure {
-    width: 6rem; 
-    margin: 0 auto;
-  }
-  header figure img {
-    border-radius: 50%;
-  }
+  
