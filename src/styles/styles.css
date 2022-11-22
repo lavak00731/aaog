@@ -70,7 +70,8 @@
 
   body {
     font-family: var(--body-text-font);
-    font-size: 1rem;
+    font-size: clamp(1rem, 1.5vw + 1rem, 1.25rem);
+    line-height: calc(1ex / 0.32);
     line-height: 1.5;
     color: var(--black-color);
     font-size-adjust: 0.5;
@@ -114,9 +115,6 @@
     font-style: italic;
     line-height: calc(1ex / 0.35);
     margin: calc(1ex / 0.35) 0;
-  }
-  p {
-    line-height: calc(1ex / 0.32);
   }
 
   /* Helper classes */
@@ -328,6 +326,7 @@
       }
       header figure {
         width: 9rem;
+        margin-top: 1rem;
       }
       nav .aaog-menu-trigger, nav a {
         font-size: 1.25rem;
@@ -343,7 +342,11 @@
     margin: 0 auto;
     padding: 0 1rem;
   }
-
+  @media (min-width: 1300px) {
+    main {
+      padding: 0;
+    }
+  }
   /* animations */
   @media (prefers-reduced-motion: no-preference) {
     html {
