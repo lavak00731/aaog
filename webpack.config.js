@@ -14,7 +14,7 @@ const config = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, "dist"),
-    assetModuleFilename: 'src/imagenes/[name].[ext]',
+    assetModuleFilename: '[path][name][ext]',
     clean: true
   },
   devServer: {
@@ -41,7 +41,7 @@ const config = {
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
-        type: "asset"
+        type: "asset/resource"
       },
 
       // Add your rules for custom modules here
