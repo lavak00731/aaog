@@ -62,9 +62,11 @@
     --black-color: #232020;
     --light-bg: #F5E0B7;
     --dark-bg: #4F5A69;
-    --interactive-color: #004452;
+    --interactive-color: #094376;
     --titles-font: 'Oswald', sans-serif;
     --body-text-font: 'Merriweather', serif;
+    --side-gap: 1rem;
+    --up-down-gap: 1rem;
   }
   /* Fuentes */
 
@@ -137,6 +139,9 @@
     margin: -3rem 0 0;
     text-align: center;
     }
+    .aaog-text-center {
+      text-align: center;
+    }
     .aaog-skip-link:focus-visible {
         margin: 0;    
     }
@@ -147,22 +152,24 @@
     a {
       color: var(--interactive-color);
     }
-    a:focus-visible {
+    a:focus-visible,
+    a:hover {
       background-color: var(--interactive-color);
       color: var(--white-color);
       outline: none;
     }
-    button, input[type="submit"] {
+    button, input[type="submit"], .aaog-btn {
       color: var(--white-color);
       background-color: var(--interactive-color);
       padding: 1rem 2rem;
-      border-color: transparent;
       border-radius: 0.25rem;
       font-weight: 700;
-      border-width: 0.125rem;
+      border: 0.125rem solid var(--interactive-color);
     }
     button:focus-visible, input[type="submit"]:focus-visible,
-    button:hover, input[type="submit"]:hover {
+    button:hover, input[type="submit"]:hover,
+    .aaog-btn:focus-visible,
+    .aaog-btn:hover {
       color: var(--interactive-color);
       background-color: var(--white-color);
       border-color: var(--interactive-color);
@@ -233,20 +240,23 @@
         overflow: scroll;
       }
     }
+    nav {
+      background-color: var(--light-bg);
+    }
     nav > ul {
       list-style: none;
       padding-left: 0;
     }
     nav .aaog-menu-trigger, nav a {
-      color: var(--light-bg);
-      background-color: var(--black-color);
+      color: var(--black-color);
+      background-color: var(--light-bg);
       text-decoration: none;
       display: block;
       margin-bottom: 0.25rem;
       padding: 1rem 2rem;
       text-align: left;
       width: 100%;
-      border: 0.125rem solid transparent;
+      border: 0.125rem solid var(--black-color);
       border-radius: 0.25rem;
       font-weight: 700;
     }
@@ -254,14 +264,14 @@
     nav a:focus-visible,
     nav .aaog-menu-trigger:hover, 
     nav a:hover {
-      color: var(--black-color);
-      background-color: var(--light-bg);
+      color: var(--light-bg);
+      background-color: var(--black-color);
       border-color: var(--black-color);
       outline: none;
     }
     nav .aaog-menu-trigger:focus-visible svg,
     nav .aaog-menu-trigger:hover svg {
-      fill: var(--black-color);
+      fill: var(--light-bg);
     }
     nav ul {
       list-style: none;
@@ -277,7 +287,7 @@
       display: blocK;
       width: 1rem;
       height: 1rem;
-      fill: var(--light-bg);
+      fill: var(--black-color);
     }
     .aaog-menu-trigger[aria-expanded="true"] svg {
       transform: translateY(-50%) rotate(180deg);
@@ -300,7 +310,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-content: flex-start;
         background-color: transparent;
         padding: 1rem 0;
@@ -347,6 +357,39 @@
       padding: 0;
     }
   }
+  /* main sections */
+  .aaog-main-section,
+  .aaog-news-container {
+    margin: 0 0 2rem;
+  }
+  /* Home News Section */
+  .new-date {
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-style: italic;
+  }
+  @media (min-width: 1200px) {
+    .aaog-news-wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      gap: var(--up-down-gap) var(--side-gap);
+      margin-bottom: 2rem;
+    }
+    .aaog-news-wrapper .aaog-news-container {
+      grid-column: 1fr;
+      grid-row: 2 / 3;
+    }
+    .aaog-news-wrapper .aaog-news-container:nth-child(n + 4) {
+      grid-column: 1fr;
+      grid-row: 3 / 3;
+    }
+     .aaog-news-wrapper .aaog-news-container:first-child {
+      grid-column: 1 / span 4;
+      grid-row: 1 / 2;
+     }
+  }
+  
   /* animations */
   @media (prefers-reduced-motion: no-preference) {
     html {
