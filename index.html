@@ -19,7 +19,7 @@
         </a>  
         <nav aria-labelledby="main-menu">
             <p id="main-menu" hidden="hidden">Men&uacute; Principal</p>
-            <button type="menu" class="aaog-menu-opener" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="aaog-menu-opener" aria-haspopup="true" aria-expanded="false">
                 Men&uacute;
                 <svg aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 30 30">
                     <rect class="top" y="4" width="25" height="4"  x="2.5"></rect>
@@ -109,39 +109,60 @@
                 </div>
                 <p class="aaog-text-center"><a href="/novedades" class="aaog-btn">Ver Todas Las Noticias</a></p>                
             </section>
+            <div class="aaog-separator"></div>
             <section class="aaog-main-section" aria-labelledby="productos">
                 <h2 id="productos">Productos</h2>
                 <p>Contamos con una amplia variedad de productos.</p>
-                <div class="aaog-product-wrapper">
-                    <figure>
-                        <img loading="lazy" src="src/imagenes/productos/pistolas/pistolabelgrano.jpg" alt="R&eacute;plica de la Pistola de Chispa que perteneció al General Manuel Belgrano">
-                    </figure>
-                    <h3><a href="/es/productos/pistolas.html">Pistolas</a></h3>
-                </div>
-                <div class="aaog-product-wrapper">
-                    <figure>
-                        <img loading="lazy" src="" alt="">
-                    </figure>
-                    <h3><a href="/es/productos/mosquetesyfusiles.html">Mosquetes y Fusiles</a></h3>
-                </div>
-                <div class="aaog-product-wrapper">
-                    <figure>
-                        <img loading="lazy" src="" alt="">
-                    </figure>
-                    <h3><a href="/es/productos/canones.html">Ca&nacute;ones</a></h3>
-                </div>
-                <div class="aaog-product-wrapper">
-                    <figure>
-                        <img loading="lazy" src="" alt="">
-                    </figure>
-                    <h3><a href="/es/productos/morteros.html">Morteros</a></h3>
-                </div>
-                <div class="aaog-product-wrapper">
-                    <figure>
-                        <img loading="lazy" src="" alt="">
-                    </figure>
-                    <h3><a href="/novedades/">Armas Antiguas y Militaria</a></h3>
-                </div>
+                <div class="aaog-products-container">
+                    <div class="aaog-product-wrapper">
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/pistolas/pistolabelgrano.jpg" alt="R&eacute;plica de la Pistola de Chispa que perteneció al General Manuel Belgrano">
+                        </figure>
+                        <h3>Pistolas</h3>
+                        <p>Armas de avancarga utilizadas con una sola mano, en principio la caballer&iacute;a la adopt&oacute; y luego su uso se extendi&oacute; en el uso civil.</p>
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ir a Pistolas</a></p>
+                    </div>
+                    <div class="aaog-product-wrapper">
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/fusilesymosquetes/Bbess1.jpg" alt="R&eacute;plica funcional de un fusil Brown Bess">
+                        </figure>
+                        <h3>Mosquetes y Fusiles</h3>
+                        <p>Las armas largas eran las m&acute;s utilizadas por la infanter&iacute;a en la batalla a campo abierto. Fueron ellas las protagonistas principales de las confrontaciones m&acute;s memorables de todos los tiempos.</p>
+                        <p class="aaog-text-center"><a class="aaog-btn" href="/es/productos/mosquetesyfusiles.html" class="aaog-btn">Ir a Mosquetes y Fusiles</a></p>
+                    </div>
+                    <div class="aaog-product-wrapper">
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/canones/canones.jpg" alt="Dos r&eacute;plicas de ca&ntilde;ones de campo a escala fabricados en bronce">
+                        </figure>
+                        <h3>Ca&ntilde;ones</h3>
+                        <p>Fabricamos una amplia gama de ca&ntilde;ones de campo y navales, r&eacute;plicas fieles y exactas de los utilizados por las flotas y ejercitos de los grandes imperios. De s&oacute;lida construcci&oacute;n, son capaces de disparar munici&oacute;n real de plomo utilizando cargas de p&oacute;lvora negra.</p>
+                        <p class="aaog-text-center"><a href="/es/productos/canones.html" class="aaog-btn">Ir a Ca&ntilde;ones</a></p>
+                    </div>
+                    <div class="aaog-product-wrapper">
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/morteros/mo002_imagen002.jpg" alt="R&eacute;plica de mortero ingl&eacute;s confeccionado en bronce">
+                        </figure>
+                        <h3>Morteros</h3>
+                        <p>Estas armas de grueso calibre fueron una pieza de artiller&iacute;a fundamental en las batallas a campo. El tama&ntilde;o de su munici&oacute;n era verdaderamente intimidante para cualquier adversario. El estruendo y la llamarada que producen al disparar son un verdadero espect&aacute;culo.</p>
+                        <p class="aaog-text-center"><a href="/es/productos/morteros.html" class="aaog-btn">Ir a Morteros</a></p>
+                    </div>
+                    <div class="aaog-product-wrapper">
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/militaria/V_lf2_01.jpg" alt="Pistola antigua de dos ca&ntilde;os belga de fuego central">
+                        </figure>
+                        <h3>Armas Antiguas y Militaria</h3>
+                        <p>Aqu&iacute; ofrecemos armas y art&iacute;culos afines que ocacionalmente se encuentran con DISPONIBILIDAD INMEDIATA</p>
+                        <p class="aaog-text-center"><a href="/novedades/" class="aaog-btn">Ir a Armas Antiguas y Militaria</a></p>
+                    </div>
+                    <div class="aaog-product-wrapper">
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/ac001_imagen.jpg" alt="Cuerno Polvorero">
+                        </figure>
+                        <h3>Accesorios</h3>
+                        <p>Ponemos a su disposici&oacute;n una amplia variedad de implementos indispensables para el tiro con avancarga. Cuernos polvoreros, baquetas y baquetones de carga, calepinos y todos los tamaños de municiones para utilizar con las armas que producimos.</p>
+                        <p class="aaog-text-center"><a href="/es/productos/accesorios.html" class="aaog-btn">Ir a Accesorios</a></p>
+                    </div>
+                </div>                
             </section>
         </article>        
     </main>
