@@ -36,6 +36,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: "./src/es/sobrenosotros.html",
       filename: "sobrenosotros.html",
+      filePath: "./src/es/componentes",
       inject: true
     }),
     // Add your plugins here

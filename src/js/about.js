@@ -1,4 +1,5 @@
 import "./../styles/styles.css";
+import "./../styles/aboutus.css";
 function importAll(r) {
     return r.keys().map(r);
   }

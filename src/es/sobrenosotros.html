@@ -5,40 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Armas Antiguas Osvaldo Gatto - Sobre Nosotros</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
 </head>
-<body>
-    <main>
+<body>    
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
+    <main id="main">
         <h1>Sobre Nosotros</h1>
         <ul id="linktarget">
-            <li><a href="#intro" data-type="internal" data-id="#intro">Introducción</a></li>
+            <li><a href="#intro" data-type="internal" data-id="#intro">Introducci&oacute;n</a></li>
             <li><a href="#workshop">El Taller</a></li>
             <li><a href="#restauraciones">Restauraciones</a></li>
-            <li><a href="#articulos">Artículos y Publicaciones</a></li>
+            <li><a href="#articulos">Art&iacute;culos y Publicaciones</a></li>
         </ul>        
-        <h2 id="intro">Introducción</h2>       
+        <h2 id="intro">Introducci&oacute;n</h2>       
         <blockquote>
-            <p>Una réplica es una copia o reproducción de algo original, respetando formas, materiales, utilidad, peso, características y funcionamiento.</p>
+            <p>Una r&eacute;plica es una copia o reproducci&oacute;n de algo original, respetando formas, materiales, utilidad, peso, caracter&iacute;sticas y funcionamiento.</p>
         </blockquote>        
         <figure>
             <img  alt="Imagen del Profesor Osvaldo Gatto" src="/src/imagenes/perfilosvaldo.jpg"/>
         </figure>        
-        <p>Mi nombre es Osvaldo Gatto y cuando tengo que definir quien soy y a qué me dedico, me gusta decir que soy un artesano profesor de Historia, 
+        <p>Mi nombre es Osvaldo Gatto y cuando tengo que definir quien soy y a qu&eacute; me dedico, me gusta decir que soy un artesano profesor de Historia, 
             enamorado desde siempre de las armas antiguas y dentro de este rubro, de las pistolas de avancarga. Por cierto, las armas de todas las 
-            épocas han servido de eje a la hora de comprender el dominio que un pueblo ejerció sobre otro, el desarrollo tecnológico alcanzado o el concepto cultural que se reveló como característica del tiempo estudiado. En esto, la invención de la pólvora vino a marcar “a fuego” la supremacía o la obediencia según el bando en que se estaba.
-             Así, la pólvora negra, de origen incierto, fue el propelente en las armas de fuego, largas o cortas, de artillería, navales o de fortalezas, 
-        hasta fines del siglo XIX cuando el uso de la pólvora nitrocelulósica puso en el plano de lo antiguo todo lo realizado anteriormente.</p>        
+            &eacute;pocas han servido de eje a la hora de comprender el dominio que un pueblo ejerci&oacute; sobre otro, el desarrollo tecnol&oacute;gico alcanzado o el concepto cultural que se revel&oacute; como caracter&iacute;stica del tiempo estudiado. En esto, la invenci&oacute;n de la p&oacute;lvora vino a marcar “a fuego” la supremac&iacute;a o la obediencia seg&uacute;n el bando en que se estaba.
+             As&iacute;, la p&oacute;lvora negra, de origen incierto, fue el propelente en las armas de fuego, largas o cortas, de artiller&iacute;a, navales o de fortalezas, 
+        hasta fines del siglo XIX cuando el uso de la p&oacute;lvora nitrocelul&oacute;sica puso en el plano de lo antiguo todo lo realizado anteriormente.</p>        
        
-        <figure><img src="/src/imagenes/fotoreplicadepistoladebelgrano.jpg" alt="Replica Operativa de la Pistalo del General Manuel Belgrano sobre la bandera argentina"/></figure>        
+        <figure>
+          <img src="/src/imagenes/fotoreplicadepistoladebelgrano.jpg" alt="R&eacute;plica Operativa de la Pistala del General Manuel Belgrano sobre la bandera argentina"/>
+          <figcaption>Replica Operativa de la Pistala del General Manuel Belgrano</figcaption>
+        </figure>        
         
-        <figure><img src="/src/imagenes/pistoladerueda.jpg" alt="Réplica de Pistola de rueda alemana del 1632 con sombrero y espada de época"/></figure>             
+        <figure>
+          <img src="/src/imagenes/pistoladerueda.jpg" alt="R&eacute;plica de Pistola de rueda alemana del 1632 con sombrero y espada de &eacute;poca"/>
+          <figcaption>R&eacute;plica de Pistola de rueda alemana del 1632</figcaption>
+        </figure>             
         
-        <p>Siempre llamaron mi atención, con una seducción inexplicable desde las incontables vitrinas esas joyas del pasado, militares o civiles, grandes o pequeñas, de chispa o percusión, con grabados o “peladas”, sobrias o refinadas, estriadas o lisas, como durmiendo, como si se tratara de volcanes. Por algo aún más inexplicable, siempre sentí el fuerte impulso de reproducirlas, como si genéticamente en mi sangre se despertara algún artífice de la antigüedad, disponiéndome a la a veces difícil tarea de transformar un macizo de acero en caño, un tablón de madera en cureña, un fleje en muelle o cuanto material en apariencia inerte forme parte de una pieza que aunque nueva, guarde la esencia de un original. Algo así, salvando las distancias del disparate, como ocurre con la ciencia que pretende clonar dinosaurios u otros animales desaparecidos.</p>        
+        <p>Siempre llamaron mi atenci&oacute;n, con una seducci&oacute;n inexplicable desde las incontables vitrinas esas joyas del pasado, militares o civiles, grandes o peque&ntilde;as, de chispa o percusi&oacute;n, con grabados o “peladas”, sobrias o refinadas, estriadas o lisas, como durmiendo, como si se tratara de volcanes. Por algo a&uacute;n m&aacute;s inexplicable, siempre sent&iacute; el fuerte impulso de reproducirlas, como si gen&eacute;ticamente en mi sangre se despertara alg&uacute;n art&iacute;fice de la antigüedad, disponi&eacute;ndome a la a veces dif&iacute;cil tarea de transformar un macizo de acero en ca&ntilde;o, un tabl&oacute;n de madera en cure&ntilde;a, un fleje en muelle o cuanto material en apariencia inerte forme parte de una pieza que aunque nueva, guarde la esencia de un original. Algo as&iacute;, salvando las distancias del disparate, como ocurre con la ciencia que pretende clonar dinosaurios u otros animales desaparecidos.</p>        
         
-        <figure><img src="/src/imagenes/fotosdeosvaldoymartin.jpeg" alt="Osvaldo y Martín Gatto posando con armas en sus manos en su sala de armas"/></figure>   
+        <figure><img src="/src/imagenes/fotosdeosvaldoymartin.jpeg" alt="Osvaldo y Mart&iacute;n Gatto posando con armas en sus manos en su sala de armas"/></figure>   
         
-        <p>Traté desde donde pude de acercarme a originales y estudiarlos, algunos por compra, otros por préstamo, por modelo o época, por sistema, etc. y reproducirlos aclarando en forma efectiva y real que mi objetivo nunca es hacer pasar una reproducción actual por algo del pasado. De ahí que mis réplicas nunca han pretendido pasar por otra cosa, tal como lo expresan sus marcas. Fruto de un trabajo paciente, cada pistola puede tardar entre 45 y 60 días de tiempo para gestarse. Esto me remite a una aclaración quizás ociosa: es imposible hablar de stock, por lo que mi trabajo es casi siempre a pedido. Sin embargo, lo que parece en contra puede trocarse a favor porque la no existencia de una producción en serie, me permite reproducir a gusto modelos quizás únicos. Así también es interesante lo que se hace con respecto a la restauración, los modelos a escala o algunos modelos de armas blancas, con preponderancia del Renacimiento que construyo desde cero.</p>        
+        <p>Trat&eacute; desde donde pude de acercarme a originales y estudiarlos, algunos por compra, otros por pr&eacute;stamo, por modelo o &eacute;poca, por sistema, etc. y reproducirlos aclarando en forma efectiva y real que mi objetivo nunca es hacer pasar una reproducci&oacute;n actual por algo del pasado. De ah&iacute; que mis r&eacute;plicas nunca han pretendido pasar por otra cosa, tal como lo expresan sus marcas. Fruto de un trabajo paciente, cada pistola puede tardar entre 45 y 60 d&iacute;as de tiempo para gestarse. Esto me remite a una aclaraci&oacute;n quiz&aacute;s ociosa: es imposible hablar de stock, por lo que mi trabajo es casi siempre a pedido. Sin embargo, lo que parece en contra puede trocarse a favor porque la no existencia de una producci&oacute;n en serie, me permite reproducir a gusto modelos quiz&aacute;s &uacute;nicos. As&iacute; tambi&eacute;n es interesante lo que se hace con respecto a la restauraci&oacute;n, los modelos a escala o algunos modelos de armas blancas, con preponderancia del Renacimiento que construyo desde cero.</p>        
         
-        <p><strong>¿Me acompaña a conocer de qué se trata?</strong></p>        
+        <p><strong>¿Me acompa&ntilde;a a conocer de qu&eacute; se trata?</strong></p>        
         
         <p class="has-text-align-right"><a href="#linktarget">Volver a la lista</a></p>
         
@@ -47,20 +55,20 @@
         
         <h2 id="workshop">El taller</h2>       
         
-        <p>Desde la selección del trozo de madera ideal hasta el acabado y pulido final de cada una de las partes hay un largo camino por recorrer. El secreto de todo el proceso es hacer que cada elemento, por más pequeño que sea, tenga caracteres propios bien definidos. El resultado es una pieza con personalidad única</p>        
+        <p>Desde la selecci&oacute;n del trozo de madera ideal hasta el acabado y pulido final de cada una de las partes hay un largo camino por recorrer. El secreto de todo el proceso es hacer que cada elemento, por m&aacute;s peque&ntilde;o que sea, tenga caracteres propios bien definidos. El resultado es una pieza con personalidad &uacute;nica</p>        
         
         
         <figure>
           <iframe loading="lazy" title="Armas Antiguas Osvaldo Gatto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/E9pc4xGSOeU?feature=oembed" frameborder="0"></iframe>
         </figure>      
         
-        <p>El trabajo en nuestro taller es de lo más variado y abarca una amplia gama de procesos y actividades bien definidos.</p>       
+        <p>El trabajo en nuestro taller es de lo m&aacute;s variado y abarca una amplia gama de procesos y actividades bien definidos.</p>       
         
-        <p>Dependiendo del tipo de construcción que requiere cada pieza, sea esta un cañón, una daga, un puñal o una pistola, hay etapas bien claras a seguir. El cuidado máximo y absoluto en cada una de ellas resulta de suma importancia para que el acabado final tenga la contundencia y la calidad que caracterizan a nuestros productos.</p>        
+        <p>Dependiendo del tipo de construcci&oacute;n que requiere cada pieza, sea esta un ca&ntilde;&oacute;n, una daga, un pu&ntilde;al o una pistola, hay etapas bien claras a seguir. El cuidado m&aacute;ximo y absoluto en cada una de ellas resulta de suma importancia para que el acabado final tenga la contundencia y la calidad que caracterizan a nuestros productos.</p>        
         
-        <p>Cada pistola tiene su génesis en un trozo de madera que más adelante pasará a ser cureña gracias al trabajo cuidadoso a base de lima. El acabado definitivo llega a su máximo esplendor gracias a las lacas, los barnices y las resinas.</p>        
+        <p>Cada pistola tiene su g&eacute;nesis en un trozo de madera que m&aacute;s adelante pasar&aacute; a ser cure&ntilde;a gracias al trabajo cuidadoso a base de lima. El acabado definitivo llega a su m&aacute;ximo esplendor gracias a las lacas, los barnices y las resinas.</p>        
         
-        <p>Sea la hoja de una daga, el caño de una pistola o el alma de un puñal, la nobleza del acero es algo a tener muy en cuenta a la hora de seleccionar el material para empezar a fabricar una pieza. El pulido y el acabado se realizan totalmente a mano.</p>
+        <p>Sea la hoja de una daga, el ca&ntilde;o de una pistola o el alma de un pu&ntilde;al, la nobleza del acero es algo a tener muy en cuenta a la hora de seleccionar el material para empezar a fabricar una pieza. El pulido y el acabado se realizan totalmente a mano.</p>
         
         
         <p class="has-text-align-right"><a href="#linktarget">Volver a la lista</a></p>      
@@ -73,15 +81,15 @@
           <p>El trabajo artesanal de devolverle la vida a una pieza original que el paso del tiempo ha ido erosionando.</p>
         </blockquote>        
             
-        <p>Muchas veces llegan a nosotros armas antiguas que exhiben su edad por el deterioro más que por su nobleza. En muchos casos, a las roturas que provocó un descuido hay que sumar piezas faltantes o desgastadas que impiden el normal funcionamiento del arma. Es una concepción equivocada el hecho que porque una pieza es vieja, tiene que estar oxidada, golpeada o rajada.</p>   
+        <p>Muchas veces llegan a nosotros armas antiguas que exhiben su edad por el deterioro m&aacute;s que por su nobleza. En muchos casos, a las roturas que provoc&oacute; un descuido hay que sumar piezas faltantes o desgastadas que impiden el normal funcionamiento del arma. Es una concepci&oacute;n equivocada el hecho que porque una pieza es vieja, tiene que estar oxidada, golpeada o rajada.</p>   
         
-        <p>Sencillamente, cuando nuevas lucieron muy diferentes a como las vemos hoy, si bien es cierto que no todas las armas recibieron igual terminación, acabado, pulido, refinamiento, etc. Nunca será la misma una pistola de duelo que una militar. Ni en su terminación, ni en su robustez, ni en su apariencia. Tan simple como que fueron construidas con un propósito diferente, y hasta es probable que lleguen a nosotros con heridas de guerra o por limpiar el honor de vaya a saber quien.</p>        
-        
-        
-        <p>Pero en algo se van a parecer. Aquellas pistolas, aquel rifle de tiro, aquel fusil o aquel mosquete, casi siempre necesitan del restaurador, por cosmética, por desperfectos o roturas? por lo que sea.</p>     
+        <p>Sencillamente, cuando nuevas lucieron muy diferentes a como las vemos hoy, si bien es cierto que no todas las armas recibieron igual terminaci&oacute;n, acabado, pulido, refinamiento, etc. Nunca ser&aacute; la misma una pistola de duelo que una militar. Ni en su terminaci&oacute;n, ni en su robustez, ni en su apariencia. Tan simple como que fueron construidas con un prop&oacute;sito diferente, y hasta es probable que lleguen a nosotros con heridas de guerra o por limpiar el honor de vaya a saber quien.</p>        
         
         
-        <p>Sigo pensando que se van a ver mucho mejor en las colecciones, en la soledad de una pared, en la caja o detrás de una vitrina, si recuperan su estado, si recuperan su forma debidamente restaurada, aumentando su valor, no faltándole nada. Y si recuperan su condición de uso, se habrá logrado ampliamente el volverlas a la vida. Nada menos.</p>
+        <p>Pero en algo se van a parecer. Aquellas pistolas, aquel rifle de tiro, aquel fusil o aquel mosquete, casi siempre necesitan del restaurador, por cosm&eacute;tica, por desperfectos o roturas? por lo que sea.</p>     
+        
+        
+        <p>Sigo pensando que se van a ver mucho mejor en las colecciones, en la soledad de una pared, en la caja o detr&aacute;s de una vitrina, si recuperan su estado, si recuperan su forma debidamente restaurada, aumentando su valor, no falt&aacute;ndole nada. Y si recuperan su condici&oacute;n de uso, se habr&aacute; logrado ampliamente el volverlas a la vida. Nada menos.</p>
         
         
         
@@ -93,30 +101,31 @@
 
         <div class="aaog-separator"></div>        
         
-        <h2 id="articulos">Artículos y Publicaciones</h2>
+        <h2 id="articulos">Art&iacute;culos y Publicaciones</h2>
         
         
         
         <ul>
-          <li><a href="https://www.facebook.com/TVPublica/videos/256811076142207/" target="_blank">Armas Antiguas Osvaldo Gatto –  Nota en la TV Pública</a></li>
-          <li><a href="https://www.telam.com.ar/notas/202202/584384-rosario-replica-pistola-manuel-belgrano.html" target="_blank">Exhibirán una réplica de la pistola que perteneció al general Manuel Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/cartas-lectores/la-pistola-belgrano-n10009322.html" target="_blank">La pistola de Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.rosario3.com/ecos365/noticias/Rosarinos-hacen-replicas-de-armas-antiguas-y-ahora-van-por-el-sable-corvo-de-San-Martin-20220221-0016.html" target="_blank">Rosarinos hacen réplicas de armas antiguas y ahora van por el sable corvo de San Martín</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/cultura-y-libros/manos-expertas-un-tributo-belgrano-n2644069.html" target="_blank">Manos expertas en un tributo a Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/la-ciudad/armas-antiguas-rosario-y-hollywood-n287670.html" target="_blank">Armas antiguas, entre Rosario y Hollywood</a></li>
+          <li><a href="https://www.facebook.com/TVPublica/videos/256811076142207/" target="_blank">Armas Antiguas Osvaldo Gatto –  Nota en la TV P&uacute;blica</a></li>
+          <li><a href="https://www.telam.com.ar/notas/202202/584384-rosario-replica-pistola-manuel-belgrano.html" target="_blank">Exhibir&aacute;n una r&eacute;plica de la pistola que perteneci&oacute; al general Manuel Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/cartas-lectores/la-pistola-belgrano-n10009322.html" target="_blank">La pistola de Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.rosario3.com/ecos365/noticias/Rosarinos-hacen-replicas-de-armas-antiguas-y-ahora-van-por-el-sable-corvo-de-San-Martin-20220221-0016.html" target="_blank">Rosarinos hacen r&eacute;plicas de armas antiguas y ahora van por el sable corvo de San Mart&iacute;n</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/cultura-y-libros/manos-expertas-un-tributo-belgrano-n2644069.html" target="_blank">Manos expertas en un tributo a Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/la-ciudad/armas-antiguas-rosario-y-hollywood-n287670.html" target="_blank">Armas antiguas, entre Rosario y Hollywood</a></li>
           <li><a href="https://www.lacapital.com.ar/la-ciudad/recrearon-el-primer-izamiento-la-bandera-el-monumento-n323367.html" target="_blank">Recrearon el primer izamiento de la bandera en el Monumento</a></li>
-          <li><a href="https://www.lacapital.com.ar/la-ciudad/belgrano-vuelve-revivir-la-creacioacuten-la-bandera-n284725.html" target="_blank">Belgrano vuelve para revivir la creación de la bandera</a></li>
+          <li><a href="https://www.lacapital.com.ar/la-ciudad/belgrano-vuelve-revivir-la-creacioacuten-la-bandera-n284725.html" target="_blank">Belgrano vuelve para revivir la creaci&oacute;n de la bandera</a></li>
         </ul>
         
         
         
         <figure>
-          <iframe title="Entregando la Pistola del General Belgrano (reproducción fiel)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/negOOR5fftk?feature=oembed" frameborder="0"></iframe>
-          <figcaption>Entregando la Pistola del General Belgrano (reproducción fiel)</figcaption>
+          <iframe title="Entregando la Pistola del General Belgrano (reproducci&oacute;n fiel)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/negOOR5fftk?feature=oembed" frameborder="0"></iframe>
+          <figcaption>Entregando la Pistola del General Belgrano (reproducci&oacute;n fiel)</figcaption>
         </figure>    
         
         <figure>
-          <iframe title="La Pistola del General Belgrano y la presentación en el Museo Histórico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/C97bmhjD6Ew?feature=oembed" frameborder="0"></iframe>
-          <figcaption>La Pistola del General Belgrano y la presentación en el Museo Histórico</figcaption>
+          <iframe title="La Pistola del General Belgrano y la presentaci&oacute;n en el Museo Hist&oacute;rico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/C97bmhjD6Ew?feature=oembed" frameborder="0"></iframe>
+          <figcaption>La Pistola del General Belgrano y la presentaci&oacute;n en el Museo Hist&oacute;rico</figcaption>
         </figure>        
         <p class="has-text-align-right"><a href="#linktarget">Volver a la lista</a></p>        
         </main>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
     <script src="/src/js/about.js"></script>
 </body>
 </html>
