@@ -1,9 +1,10 @@
 // Generated using webpack-cli https://github.com/webpack/webpack-cli
 
 const path = require("path");
+let fs = require('fs');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-
+const folderPath = path.resolve(__dirname, "src/es/componentes");
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = isProduction
@@ -11,10 +12,14 @@ const stylesHandler = isProduction
   : "style-loader";
 
 const config = {
-  entry: "./src/index.js",
+  entry: {
+    index:  "./src/js/index.js",
+    about: "./src/js/about.js"
+  },
   output: {
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: '[path][name][ext]',
+    filename: '[name].js',
     clean: true
   },
   devServer: {
@@ -24,8 +29,15 @@ const config = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "index.html",
+      filename: "index.html",
+      filePath: folderPath,
+      inject: true
     }),
-
+    new HtmlWebpackPlugin({
+      template: "./src/es/sobrenosotros.html",
+      filename: "sobrenosotros.html",
+      inject: true
+    }),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
@@ -40,7 +52,7 @@ const config = {
         use: [stylesHandler, "css-loader"],
       },
       {
-        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
+        test: /\.(eot|svg|ttf|woff|woff2|png|jpg|jpeg|gif)$/i,
         type: "asset/resource"
       },
 
