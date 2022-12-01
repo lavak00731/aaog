@@ -4,12 +4,18 @@ import "./../styles/styles.css";
 import "./../styles/aboutus.css";
 
 const lightbox = new PhotoSwipeLightbox({
-  gallery: '.aaog-gallery',
+  gallery: '#galeria-taller',
   children: 'a',
   pswpModule: () => import('photoswipe')
 });
 lightbox.init();
 
+const lightbox2 = new PhotoSwipeLightbox({
+  gallery: '#restoration',
+  children: 'a',
+  pswpModule: () => import('photoswipe')
+});
+lightbox2.init();
 
 function importAll(r) {
     return r.keys().map(r);
