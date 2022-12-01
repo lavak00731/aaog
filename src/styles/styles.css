@@ -136,6 +136,9 @@
     white-space: nowrap;
     width: 1px;
   }
+  .aaog-fullwidth {
+    width: 100%;
+  }
   .aaog-skip-link {
     background: var(--interactive-color);
     color: var(--white-color);

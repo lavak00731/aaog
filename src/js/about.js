@@ -4,11 +4,13 @@ import "./../styles/styles.css";
 import "./../styles/aboutus.css";
 
 const lightbox = new PhotoSwipeLightbox({
-  gallery: '#galeria-taller',
+  gallery: '.aaog-gallery',
   children: 'a',
   pswpModule: () => import('photoswipe')
 });
 lightbox.init();
+
+
 function importAll(r) {
     return r.keys().map(r);
   }
