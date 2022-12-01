@@ -1,0 +1,33 @@
+#galeria-taller figure {
+    width: 140px;
+    margin-bottom: 3rem;
+}
+#galeria-taller figure a {
+    border: 0.5rem solid transparent;
+    border-radius: var(--border-radius);
+    display: block;
+}
+#galeria-taller figure a:focus-visible,
+#galeria-taller figure a:hover {
+    border-color: var(--interactive-color);
+    filter:contrast(200%);
+} 
+#galeria-taller {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.pswp__img {
+    width: auto;
+}
+@media (min-width: 768px) {
+    #galeria-taller figure {
+        width: 31%;
+    }
+}
+@media (min-width: 1000px) {
+    #galeria-taller figure {
+        width: 22%;
+    }
+}
