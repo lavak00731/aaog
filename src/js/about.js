@@ -22,5 +22,4 @@ function importAll(r) {
   }
   
   const images = importAll(require.context('./../imagenes/', true, /\.(png|jpeg|jpg|svg)$/));
-  console.log(images);
 
