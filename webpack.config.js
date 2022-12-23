@@ -4,7 +4,7 @@ const path = require("path");
 let fs = require('fs');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const folderPath = path.resolve(__dirname, "src/es/componentes");
+const folderPathEs = path.resolve(__dirname, "src/es/componentes");
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = isProduction
@@ -13,13 +13,22 @@ const stylesHandler = isProduction
 
 const config = {
   entry: {
-    index:  "./src/js/index.js",
-    about: "./src/js/about.js"
+    index: {
+      import: "./src/js/index.js",
+      dependOn: 'shared'
+    },
+    about: {
+      import: "./src/js/about.js",
+      dependOn: 'shared'
+    },   
+    shared: {
+      import: "./src/js/shared.js"
+    }
   },
   output: {
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: '[path][name][ext]',
-    filename: '[name].js',
+    filename: '[name].[contenthash].js',
     clean: true
   },
   devServer: {
@@ -30,13 +39,13 @@ const config = {
     new HtmlWebpackPlugin({
       template: "index.html",
       filename: "index.html",
-      filePath: folderPath,
+      filePath: folderPathEs,
       inject: true
     }),
     new HtmlWebpackPlugin({
       template: "./src/es/sobrenosotros.html",
       filename: "sobrenosotros.html",
-      filePath: "./src/es/componentes",
+      filePath: folderPathEs,
       inject: true
     }),
     // Add your plugins here

@@ -17,9 +17,3 @@ const lightbox2 = new PhotoSwipeLightbox({
 });
 lightbox2.init();
 
-function importAll(r) {
-    return r.keys().map(r);
-  }
-  
-  const images = importAll(require.context('./../imagenes/', true, /\.(png|jpeg|jpg|svg)$/));
-
