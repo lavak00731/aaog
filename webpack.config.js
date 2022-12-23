@@ -20,7 +20,11 @@ const config = {
     about: {
       import: "./src/js/about.js",
       dependOn: 'shared'
-    },   
+    },  
+    contact: {
+      import: "./src/js/contact.js",
+      dependOn: 'shared'
+    },  
     shared: {
       import: "./src/js/shared.js"
     }
@@ -48,6 +52,13 @@ const config = {
       filename: "sobrenosotros.html",
       filePath: folderPathEs,
       chunks: ['about'],
+      inject: true
+    }),
+    new HtmlWebpackPlugin({
+      template: "./es/contacto.html",
+      filename: "contacto.html",
+      filePath: folderPathEs,
+      chunks: ['contact'],
       inject: true
     }),
     new MiniCssExtractPlugin(),
