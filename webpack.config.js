@@ -4,7 +4,7 @@ const path = require("path");
 let fs = require('fs');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
-const folderPathEs = path.resolve(__dirname, "src/es/componentes");
+const folderPathEs = path.resolve(__dirname, "es/componentes");
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = isProduction
@@ -40,14 +40,17 @@ const config = {
       template: "index.html",
       filename: "index.html",
       filePath: folderPathEs,
+      chunks: ['index'],
       inject: true
     }),
     new HtmlWebpackPlugin({
-      template: "./src/es/sobrenosotros.html",
+      template: "./es/sobrenosotros.html",
       filename: "sobrenosotros.html",
       filePath: folderPathEs,
+      chunks: ['about'],
       inject: true
     }),
+    new MiniCssExtractPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
   ],
@@ -59,7 +62,7 @@ const config = {
       },
       {
         test: /\.css$/i,
-        use: [stylesHandler, "css-loader"],
+        use: [MiniCssExtractPlugin.loader, "css-loader"],
       },
       {
         test: /\.(eot|svg|ttf|woff|woff2|png|jpg|jpeg|gif)$/i,
