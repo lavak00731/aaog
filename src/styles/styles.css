@@ -517,5 +517,34 @@
       transition: transform 1s;
     }
   }
-  
-  
+  /* Footer */
+ footer {
+  padding: 1rem;
+  background-color: var(--dark-bg);
+  color: var(--white-color);
+}
+.aaog-footer-inner {
+  margin: 0 auto 2rem;
+  max-width: 1300px;
+}
+.aaog-footer-divider {
+  border-bottom: 0.5rem double var(--white-color);
+  padding-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .aaog-footer-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .aaog-footer-divider {
+    width: 33%;
+    border-bottom: 0;  
+    padding: 0 1rem;    
+  }
+  .aaog-footer-divider:nth-child(even) {
+    border-left: 0.5rem double var(--white-color); 
+    border-right: 0.5rem double var(--white-color);
+  }
+}
