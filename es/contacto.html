@@ -11,27 +11,35 @@
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
     <main id="main">
         <h1>Contacto</h1>
-        <form action="">
-            <div class="aaog-input-wrapper">
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" aria-invalid="false" required>
-            </div>
-            <div class="aaog-input-wrapper">
-                <label for="email">Email</label>
-                <input type="text" name="email" id="email" aria-invalid="false" required>
-            </div>
-            <div class="aaog-input-wrapper">
-                <label for="asunto">Asunto (opcional)</label>
-                <input type="text" name="asunto" id="asunto">
-            </div>
-            <div class="aaog-input-wrapper">
-                <label for="comentario">Comentario</label>
-                <textarea name="comentario" id="comentario" cols="30" rows="10" aria-invalid="false" required></textarea>
-            </div>
-            <div class="aaog-input-wrapper">
-                <button type="submit" class="aaog-btn">Enviar</button>
-            </div>  
-        </form>
+        <article class="aaog-contact">
+            <form action="">
+                <div class="aaog-input-wrapper">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" aria-invalid="false" required>
+                </div>
+                <div class="aaog-input-wrapper">
+                    <label for="email">Email</label>
+                    <input type="text" name="email" id="email" aria-invalid="false" required>
+                </div>
+                <div class="aaog-input-wrapper">
+                    <label for="asunto">Asunto (opcional)</label>
+                    <input type="text" name="asunto" id="asunto">
+                </div>
+                <div class="aaog-input-wrapper">
+                    <label for="comentario">Comentario</label>
+                    <textarea name="comentario" id="comentario" cols="30" rows="10" aria-invalid="false" required></textarea>
+                </div>
+                <div class="aaog-input-wrapper">
+                    <button type="submit" class="aaog-btn">Enviar</button>
+                </div>  
+            </form>
+            <address class="aaog-contact-info">
+                <p><strong>Ciudad: </strong>(S2001AFH) Rosario - Santa Fe - Argentina</p>
+                <p><strong>Tel&eacute;fono: </strong><a href="+543417773379">(+54) 341 777-3379</a></p>
+                <p><strong>e-mail: </strong>avancarga@osvaldogatto.com.ar</p>  
+            </address>            
+        </article>
+        
         <div id="aaog-form-success" hidden>
             <h2 id="success-title">Gracias por ponerse en contacto!</h2>
             <p>En breve estaremos respondi&eacute;ndole</p>

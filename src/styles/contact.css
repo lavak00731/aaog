@@ -6,6 +6,9 @@ form {
     --interactive-color: #094376;
     --border-radius: 0.25rem;
     --border-width: 0.125rem;
+    --side-gap: 1rem;
+    max-width: 350px;
+
 }
 label {
     font-weight: 700;
@@ -28,4 +31,22 @@ input:focus-visible, textarea:focus-visible {
 }
 .aaog-input-wrapper button {
     width: 100%;
+}
+.aaog-contact-info {
+    background: var(--light-bg);
+    border: var(--border-width) solid var(--black-color);
+    border-radius: var(--border-radius);
+    padding: var(--side-gap);
+}
+@media (min-width: 768px) {
+    .aaog-contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+    .aaog-contact-info {
+        max-width: 75%;
+    }
 }
