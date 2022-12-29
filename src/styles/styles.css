@@ -368,6 +368,9 @@
     nav .aaog-menu-trigger:hover svg {
       fill: var(--light-bg);
     }
+    nav .aaog-menu-trigger[aria-expanded="false"]:hover + .aaog-submenu {
+      display: block;
+    }
     nav ul {
       list-style: none;
     }

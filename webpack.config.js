@@ -15,19 +15,13 @@ const config = {
   entry: {
     index: {
       import: "./src/js/index.js",
-      dependOn: 'shared'
     },
     about: {
       import: "./src/js/about.js",
-      dependOn: 'shared'
     },  
     contact: {
       import: "./src/js/contact.js",
-      dependOn: 'shared'
     },  
-    shared: {
-      import: "./src/js/shared.js"
-    }
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -45,21 +39,21 @@ const config = {
       filename: "index.html",
       filePath: folderPathEs,
       chunks: ['index'],
-      inject: true
+      inject: 'body'
     }),
     new HtmlWebpackPlugin({
       template: "./es/sobrenosotros.html",
       filename: "sobrenosotros.html",
       filePath: folderPathEs,
       chunks: ['about'],
-      inject: true
+      inject: 'body'
     }),
     new HtmlWebpackPlugin({
       template: "./es/contacto.html",
       filename: "contacto.html",
       filePath: folderPathEs,
       chunks: ['contact'],
-      inject: true
+      inject: 'body'
     }),
     new MiniCssExtractPlugin(),
     // Add your plugins here

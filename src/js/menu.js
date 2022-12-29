@@ -12,7 +12,6 @@ export default class MyMenu {
         }
     }
     menuOpenOrClosed (e) {
-      console.log(e)
         if(e.target.tagName !== 'BUTTON') {           
             this.switchMenu(e.target.closest('button'));
         } else {

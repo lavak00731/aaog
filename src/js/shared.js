@@ -1,6 +1,6 @@
 import MyMenu from "./menu";
   
-export default function Shared () {
+export function Shared () {
     function importAll(r) {
         return r.keys().map(r);
       }  
@@ -9,4 +9,3 @@ export default function Shared () {
     const menu = new MyMenu('navMenu', 'menuTrigger', 'aaog-menu-trigger');
     menu.init();
 } 
-Shared ()
