@@ -368,9 +368,6 @@
     nav .aaog-menu-trigger:hover svg {
       fill: var(--light-bg);
     }
-    nav .aaog-menu-trigger[aria-expanded="false"]:hover + .aaog-submenu {
-      display: block;
-    }
     nav ul {
       list-style: none;
     }
@@ -418,6 +415,9 @@
       }
       .nav-wrapper li:first-child {
         position: relative;        
+      }
+      .nav-wrapper li:hover > .aaog-submenu {
+        display: block;
       }
       .nav-wrapper li:first-child .aaog-submenu {
         position: absolute;

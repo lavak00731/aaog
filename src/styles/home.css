@@ -12,23 +12,69 @@
  @media (min-width: 1200px) {
    .aaog-news-wrapper {
      display: grid;
-     grid-template-columns: repeat(2, 1fr);
-     grid-template-rows: repeat(3, 1fr);
-     gap: var(--up-down-gap) var(--side-gap);
+     grid-template-columns: auto auto;
+     grid-template-rows: repeat(3, 0.5fr);
+     grid-row-gap: var(--up-down-gap);
      margin-bottom: 2rem;
    }
+   .aaog-news-wrapper .aaog-news-container:nth-child(even) {
+    margin-right: var(--side-gap);
+   }
+   .aaog-news-wrapper .aaog-news-container:nth-child(odd):not(:first-child) {
+    margin-left: var(--side-gap);
+   }
    .aaog-news-wrapper .aaog-news-container {
-     grid-column: 1fr;
      grid-row: 2 / 3;
    }
    .aaog-news-wrapper .aaog-news-container:nth-child(n + 4) {
-     grid-column: 1fr;
      grid-row: 3 / 3;
    }
     .aaog-news-wrapper .aaog-news-container:first-child {
      grid-column: 1 / span 4;
      grid-row: 1 / 2;
     }
+    .aaog-news-wrapper .aaog-news-container:first-child {
+      position: relative;
+      min-height: 70lvh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      color: var(--white-color);
+    }
+    .aaog-news-wrapper .aaog-news-container:first-child figure {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      aspect-ratio: 16 / 9;
+    }
+    .aaog-news-wrapper .aaog-news-container:first-child h3 {
+      font-size: clamp(1.75rem, 3vw + 1rem, 3rem);
+      line-height: calc(1ex / 0.42);
+      margin: 0.5rem 0 1rem;
+    }
+    .aaog-news-wrapper .aaog-news-container:first-child h3 a {
+      color: var(--white-color);      
+    }
+    .aaog-news-wrapper .aaog-news-container:first-child .aaog-news--text-wrapper {
+      padding: 2rem;
+      background-color: rgba(0,0,0, 80%);
+      width: 45%;
+    }
+    .aaog-news-wrapper .aaog-news-container:focus-within .aaog-news--text-wrapper {
+      background-color: rgba(255,255,255, 80%);
+      color: var(--dark-bg);
+    }
+   }
+ @media (min-width: 1400px) {
+  .aaog-news-wrapper .aaog-news-container:first-child {
+    position: relative;
+    min-height: 80vh;
+    overflow: hidden;
+  }
  }
  /* Productos Home */
  .aaog-product-wrapper {
@@ -40,6 +86,7 @@
  .aaog-product-wrapper figure {    
    aspect-ratio: 4 / 3;
  }
+ 
  .aaog-product-wrapper img {
    vertical-align: middle;
    border-radius: var(--border-radius);

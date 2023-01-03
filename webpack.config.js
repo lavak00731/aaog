@@ -21,7 +21,10 @@ const config = {
     },  
     contact: {
       import: "./src/js/contact.js",
-    },  
+    },
+    pistolsLanding: {
+      import: "./src/js/pistolsLanding.js"
+    }  
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -53,6 +56,13 @@ const config = {
       filename: "contacto.html",
       filePath: folderPathEs,
       chunks: ['contact'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./es/productos/pistolas.html",
+      filename: "pistolas.html",
+      filePath: folderPathEs,
+      chunks: ['pistolsLanding'],
       inject: 'body'
     }),
     new MiniCssExtractPlugin(),

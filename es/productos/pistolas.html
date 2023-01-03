@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armas Antiguas Osvaldo Gatto - Inicio</title>
+    <title>Armas Antiguas Osvaldo Gatto - Pistolas</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
 </head>
 <body>
-    
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
+    <main id="main">
+        <article>
+            <h1>Productos - Pistolas</h1>
+            <p>Armas de avancarga utilizadas con una sola mano, en principio la caballer&iacute;a la adopt&oacute; y luego su uso se extendi&oacute; en el uso civil.</p>
+            <div class="aaog-filter-trigger"></div>
+            <div class="aaog-products-container">
+                <div class="aaog-product-wrapper">
+                    <p class="aaog-product-feature">Llave de Mecha</p>
+                    <figure>
+                        <img loading="lazy" src="src/imagenes/productos/pistolas/pistolabelgrano.jpg" alt="R&eacute;plica de la Pistola de Chispa que perteneci&oacute; al General Manuel Belgrano">
+                    </figure>
+                    <h2>Pistola de Mecha</h2>                    
+                    <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ir a Pistolas</a></p>
+                </div>
+                
+            </div>
+        </article>
+    </main>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
 </body>
 </html>
