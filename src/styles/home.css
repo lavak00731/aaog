@@ -35,7 +35,7 @@
     }
     .aaog-news-wrapper .aaog-news-container:first-child {
       position: relative;
-      min-height: 70lvh;
+      min-height: 95lvh;
       overflow: hidden;
       display: flex;
       flex-direction: column;
