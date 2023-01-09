@@ -302,7 +302,8 @@
     .aaog-menu-opener svg > rect {
       fill: var(--white-color);
     }
-    .aaog-menu-opener:focus-visible svg > rect {
+    .aaog-menu-opener:focus-visible svg > rect,
+    .aaog-menu-opener:hover svg > rect {
       fill: var(--interactive-color);
     }
     .aaog-menu-opener[aria-expanded="true"] .middle {
