@@ -1,4 +1,7 @@
  /* Productos Home */
+ :root {
+  
+ }
  .aaog-product-wrapper {
     padding: 1rem 1rem 2rem;
     border: var(--border-width) solid var(--dark-bg);
@@ -23,6 +26,10 @@
   .aaog-product-wrapper a:focus-visible img,
   .aaog-product-wrapper a:hover img {
     border-color: var(--interactive-color);
+  }
+  .aaog-product-wrapper h3,
+  .aaog-product-wrapper h2 {
+    margin: calc( 1ex / 0.50 ) 0;
   }
   @media (min-width: 768px) {
     .aaog-products-container {
