@@ -59,8 +59,8 @@ const config = {
       inject: 'body'
     }),
     new HtmlWebpackPlugin({
-      template: "./es/productos/pistolas.html",
-      filename: "pistolas.html",
+      template: "./es/productos/pistolasyfusiles.html",
+      filename: "pistolasyfusiles.html",
       filePath: folderPathEs,
       chunks: ['pistolsLanding'],
       inject: 'body'
