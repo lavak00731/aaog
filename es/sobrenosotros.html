@@ -7,7 +7,9 @@
     <title>Armas Antiguas Osvaldo Gatto - Sobre Nosotros</title>
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
 </head>
-<body>    
+<body>  
+  <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+  <div class="aaog-gral-wrapper">   
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
     <main id="main">
         <h1>Sobre Nosotros</h1>
@@ -21,7 +23,7 @@
         <blockquote>
             <p>Una r&eacute;plica es una copia o reproducci&oacute;n de algo original, respetando formas, materiales, utilidad, peso, caracter&iacute;sticas y funcionamiento.</p>
         </blockquote>        
-        <figure>
+        <figure class="aaog-img-left">
             <img  alt="Imagen del Profesor Osvaldo Gatto" src="src/imagenes/perfilosvaldo.jpg"/>
         </figure>        
         <p>Mi nombre es Osvaldo Gatto y cuando tengo que definir quien soy y a qu&eacute; me dedico, me gusta decir que soy un artesano profesor de Historia, 
@@ -30,19 +32,19 @@
              As&iacute;, la p&oacute;lvora negra, de origen incierto, fue el propelente en las armas de fuego, largas o cortas, de artiller&iacute;a, navales o de fortalezas, 
         hasta fines del siglo XIX cuando el uso de la p&oacute;lvora nitrocelul&oacute;sica puso en el plano de lo antiguo todo lo realizado anteriormente.</p>        
        
-        <figure>
-          <img class="aaog-fullwidth" src="src/imagenes/fotoreplicadepistoladebelgrano.jpg" alt="R&eacute;plica Operativa de la pistola del General Manuel Belgrano sobre la bandera argentina"/>
+        <figure class="aaog-img-right">
+          <img src="src/imagenes/fotoreplicadepistoladebelgrano.jpg" alt="R&eacute;plica Operativa de la pistola del General Manuel Belgrano sobre la bandera argentina"/>
           <figcaption>Replica Operativa de la pistola del General Manuel Belgrano</figcaption>
         </figure>        
         
-        <figure>
-          <img class="aaog-fullwidth" src="src/imagenes/pistoladerueda.jpg" alt="R&eacute;plica de Pistola de rueda alemana del 1632 con sombrero y espada de &eacute;poca"/>
+        <figure class="aaog-img-left">
+          <img src="src/imagenes/pistoladerueda.jpg" alt="R&eacute;plica de Pistola de rueda alemana del 1632 con sombrero y espada de &eacute;poca"/>
           <figcaption>R&eacute;plica de Pistola de rueda alemana del 1632</figcaption>
         </figure>             
         
         <p>Siempre llamaron mi atenci&oacute;n, con una seducci&oacute;n inexplicable desde las incontables vitrinas esas joyas del pasado, militares o civiles, grandes o peque&ntilde;as, de chispa o percusi&oacute;n, con grabados o “peladas”, sobrias o refinadas, estriadas o lisas, como durmiendo, como si se tratara de volcanes. Por algo a&uacute;n m&aacute;s inexplicable, siempre sent&iacute; el fuerte impulso de reproducirlas, como si gen&eacute;ticamente en mi sangre se despertara alg&uacute;n art&iacute;fice de la antigüedad, disponi&eacute;ndome a la a veces dif&iacute;cil tarea de transformar un macizo de acero en ca&ntilde;o, un tabl&oacute;n de madera en cure&ntilde;a, un fleje en muelle o cuanto material en apariencia inerte forme parte de una pieza que aunque nueva, guarde la esencia de un original. Algo as&iacute;, salvando las distancias del disparate, como ocurre con la ciencia que pretende clonar dinosaurios u otros animales desaparecidos.</p>        
         
-        <figure class="aaog-img-left"><img src="src/imagenes/fotosdeosvaldoymartin.jpeg" alt="Osvaldo y Mart&iacute;n Gatto posando con armas en sus manos en su sala de armas"/></figure>   
+        <figure class="aaog-img-right"><img src="src/imagenes/fotosdeosvaldoymartin.jpeg" alt="Osvaldo y Mart&iacute;n Gatto posando con armas en sus manos en su sala de armas"/></figure>   
         
         <p>Trat&eacute; desde donde pude de acercarme a originales y estudiarlos, algunos por compra, otros por pr&eacute;stamo, por modelo o &eacute;poca, por sistema, etc. y reproducirlos aclarando en forma efectiva y real que mi objetivo nunca es hacer pasar una reproducci&oacute;n actual por algo del pasado. De ah&iacute; que mis r&eacute;plicas nunca han pretendido pasar por otra cosa, tal como lo expresan sus marcas. Fruto de un trabajo paciente, cada pistola puede tardar entre 45 y 60 d&iacute;as de tiempo para gestarse. Esto me remite a una aclaraci&oacute;n quiz&aacute;s ociosa: es imposible hablar de stock, por lo que mi trabajo es casi siempre a pedido. Sin embargo, lo que parece en contra puede trocarse a favor porque la no existencia de una producci&oacute;n en serie, me permite reproducir a gusto modelos quiz&aacute;s &uacute;nicos. As&iacute; tambi&eacute;n es interesante lo que se hace con respecto a la restauraci&oacute;n, los modelos a escala o algunos modelos de armas blancas, con preponderancia del Renacimiento que construyo desde cero.</p>        
         
@@ -58,7 +60,7 @@
         <p>Desde la selecci&oacute;n del trozo de madera ideal hasta el acabado y pulido final de cada una de las partes hay un largo camino por recorrer. El secreto de todo el proceso es hacer que cada elemento, por m&aacute;s peque&ntilde;o que sea, tenga caracteres propios bien definidos. El resultado es una pieza con personalidad &uacute;nica</p>        
         
         
-        <figure>
+        <figure  class="aaog-img-left">
           <iframe class="aaog-fullwidth" loading="lazy" title="Armas Antiguas Osvaldo Gatto" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/E9pc4xGSOeU?feature=oembed" frameborder="0"></iframe>
         </figure>      
         
@@ -671,26 +673,41 @@
         
         
         
-        <ul>
+        <!--<ul>
           <li><a href="https://www.facebook.com/TVPublica/videos/256811076142207/" target="_blank">Armas Antiguas Osvaldo Gatto –  Nota en la TV P&uacute;blica</a></li>
           <li><a href="https://www.telam.com.ar/notas/202202/584384-rosario-replica-pistola-manuel-belgrano.html" target="_blank">Exhibir&aacute;n una r&eacute;plica de la pistola que perteneci&oacute; al general Manuel Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/cartas-lectores/la-pistola-belgrano-n10009322.html" target="_blank">La pistola de Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.rosario3.com/ecos365/noticias/Rosarinos-hacen-replicas-de-armas-antiguas-y-ahora-van-por-el-sable-corvo-de-San-Martin-20220221-0016.html" target="_blank">Rosarinos hacen r&eacute;plicas de armas antiguas y ahora van por el sable corvo de San Mart&iacute;n</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/cultura-y-libros/manos-expertas-un-tributo-belgrano-n2644069.html" target="_blank">Manos expertas en un tributo a Belgrano</a></li><li><a rel="noreferrer noopener" href="https://www.lacapital.com.ar/la-ciudad/armas-antiguas-rosario-y-hollywood-n287670.html" target="_blank">Armas antiguas, entre Rosario y Hollywood</a></li>
           <li><a href="https://www.lacapital.com.ar/la-ciudad/recrearon-el-primer-izamiento-la-bandera-el-monumento-n323367.html" target="_blank">Recrearon el primer izamiento de la bandera en el Monumento</a></li>
           <li><a href="https://www.lacapital.com.ar/la-ciudad/belgrano-vuelve-revivir-la-creacioacuten-la-bandera-n284725.html" target="_blank">Belgrano vuelve para revivir la creaci&oacute;n de la bandera</a></li>
-        </ul>
+        </ul>-->
         
         
-        
-        <figure>
-          <iframe class="aaog-fullwidth" title="Entregando la Pistola del General Belgrano (reproducci&oacute;n fiel)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/negOOR5fftk?feature=oembed" frameborder="0"></iframe>
-          <figcaption>Entregando la Pistola del General Belgrano (reproducci&oacute;n fiel)</figcaption>
-        </figure>    
-        
-        <figure>
-          <iframe class="aaog-fullwidth" title="La Pistola del General Belgrano y la presentaci&oacute;n en el Museo Hist&oacute;rico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/C97bmhjD6Ew?feature=oembed" frameborder="0"></iframe>
-          <figcaption>La Pistola del General Belgrano y la presentaci&oacute;n en el Museo Hist&oacute;rico</figcaption>
-        </figure>        
+        <div class="aaog-video-gallery">
+          <figure>
+            <iframe class="aaog-fullwidth" loading="lazy" title="Entregando la Pistola del General Belgrano (reproducci&oacute;n fiel)" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/negOOR5fftk?feature=oembed" frameborder="0"></iframe>
+            <figcaption>Entregando la Pistola del General Belgrano (reproducci&oacute;n fiel)</figcaption>
+          </figure>        
+          <figure>
+            <iframe class="aaog-fullwidth" loading="lazy" title="La Pistola del General Belgrano y la presentaci&oacute;n en el Museo Hist&oacute;rico" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" src="https://www.youtube.com/embed/C97bmhjD6Ew?feature=oembed" frameborder="0"></iframe>
+            <figcaption>La Pistola del General Belgrano y la presentaci&oacute;n en el Museo Hist&oacute;rico</figcaption>
+          </figure>
+          <figure>
+            <iframe class="aaog-fullwidth" loading="lazy" title="Los 12 ap&oacute;stoles en la historia de las armas por el Prof. Osvaldo Gatto en Cesba, publicaci&oacute;n del Apostadero TV" src="https://www.youtube.com/embed/Q4dx8Oaf-78" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Los 12 ap&oacute;stoles en la historia de las armas en Cesba, publicaci&oacute;n del Apostadero TV</figcaption>
+          </figure>
+          <figure>
+            <iframe class="aaog-fullwidth" loading="lazy" title="Nota realizada por el Diario Digital Rosario Nuestro" src="https://www.youtube.com/embed/4AD3to_9fQo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <figcaption>Nota realizada por el Diario Digital Rosario Nuestro</figcaption>
+          </figure>
+        </div>
+        <p class="aaog-text-center">
+          <a class="aaog-btn" target="blank" rel="external" href="https://www.youtube.com/user/osvaldogatto">
+            <svg  aria-hidden="true" version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M212.8 435.7c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm85 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5z" fill="red" fill-opacity=".07"/><path d="M217.8 435.7c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6zm75 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5z" fill="red" fill-opacity=".13"/><path d="M221.8 435.7c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm67 0c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6z" fill="red" fill-opacity=".2"/><path d="M226.8 435.7c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6zm57 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5z" fill="red" fill-opacity=".27"/><path d="M231.8 435.7c1.2.2 3.2.2 4.5 0 1.2-.2.2-.4-2.3-.4s-3.5.2-2.2.4zm44 0c1.2.2 3.2.2 4.5 0 1.2-.2.2-.4-2.3-.4s-3.5.2-2.2.4z" fill="red" fill-opacity=".33"/><path d="M241.3 435.7c1.5.2 3.7.2 5 0 1.2-.2 0-.4-2.8-.4-2.7 0-3.8.2-2.2.4zm25 0c1.5.2 3.9.2 5.5 0 1.5-.2.2-.4-2.8-.4s-4.3.2-2.7.4z" fill="red" fill-opacity=".4"/><path d="M203.8 77.7c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6zm101 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm-52.5 358c2 .2 5.4.2 7.5 0 2-.2.3-.4-3.8-.4s-5.8.2-3.7.4z" fill="#FE0000" fill-opacity=".47"/><path d="M207.8 77.7c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm93 0c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6z" fill="red" fill-opacity=".53"/><path d="M212.8 77.7c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm83 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5z" fill="#FE0000" fill-opacity=".6"/><path d="M217.8 77.7c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6zm74 0c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6z" fill="red" fill-opacity=".67"/><path d="M221.8 77.7c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm65 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5z" fill="red" fill-opacity=".73"/><path d="M226.8 77.7c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5zm56 0c.6.2 1.8.2 2.5 0 .6-.3.1-.5-1.3-.5-1.4 0-1.9.2-1.2.5z" fill="red" fill-opacity=".8"/><path d="M233.3 77.7c1.5.2 3.7.2 5 0 1.2-.2 0-.4-2.8-.4-2.7 0-3.8.2-2.2.4zm41 0c1.5.2 3.7.2 5 0 1.2-.2 0-.4-2.8-.4-2.7 0-3.8.2-2.2.4z" fill="#FE0000" fill-opacity=".87"/><path d="M243.3 77.7c1.5.2 3.7.2 5 0 1.2-.2 0-.4-2.8-.4-2.7 0-3.8.2-2.2.4zm21 0c1.5.2 3.7.2 5 0 1.2-.2 0-.4-2.8-.4-2.7 0-3.8.2-2.2.4zm-59.5 357c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6zm102 0c.7.3 1.6.2 1.9-.1.4-.3-.2-.6-1.3-.5-1.1 0-1.4.3-.6.6z" fill="#FE0000" fill-opacity=".93"/><path d="M228 77.7c-84.2.7-155.6 5.2-173.5 10.9-21.2 6.8-37.6 24-43.4 45.4C.8 172-2.3 270.6 4.5 338.2c4.2 40.7 8.7 54.1 23.5 68.8 13.9 13.9 24.7 18.1 56.5 21.5 40.1 4.3 86.7 5.9 171.5 5.9 106.3 0 174.3-3.4 199.6-10 18.9-4.9 36.5-20.7 43.3-38.8 4-10.8 7.7-33.7 10.3-65.1 1.7-20.5 1.7-111 0-130.5-5.3-59.4-12.2-77.8-34.8-92.9-11.7-7.9-25.2-11.3-55.9-14.1-38.8-3.5-122.8-5.9-190.5-5.3zm43.9 139.5c35.5 20.4 65.2 37.6 65.8 38.2 1 .9-14.6 10.3-65.1 39.4-36.5 21-66.8 38.2-67.5 38.2-.8 0-1.1-19.8-1.1-77.1 0-70.9.1-77.1 1.6-76.5.9.4 30.7 17.4 66.3 37.8z" fill="red"/><path d="M204.5 256.5c0 42.3.1 59.5.2 38.2.2-21.4.2-56 0-77-.1-21-.2-3.6-.2 38.8z" fill="#FF0808"/><path d="M205 256.6v75.6l5.3-3c2.8-1.6 32.5-18.7 66-38l60.7-35-65.3-37.6c-36-20.7-65.7-37.6-66-37.6-.4 0-.7 34-.7 75.6z" fill="#FFF"/></svg>
+            <span>Seguinos en Youtube</span>
+        </a>
+        </p>             
         <p class="aaog-text-center"><a class="aaog-btn" href="#linktarget">Volver a la lista</a></p>        
         </main>
         <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
+      </div>
 </body>
 </html>
