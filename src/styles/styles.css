@@ -82,27 +82,7 @@
     font-size-adjust: 0.5;
     word-spacing: 130%;
   }
-  @media (min-width: 1200px) {
-    nav {
-      grid-area: header;
-    }
-    main {
-      grid-area: main;
-    }
-    footer {
-      grid-area: footer;
-    }
-    .aaog-gral-wrapper {
-      display: grid;
-      grid-template-columns: [nav] 25% [main] 75%;
-      grid-template-rows: auto;
-      grid-template-areas: 
-        "header main"
-        ". footer";
-      max-width:  1300px;
-      margin: 0 auto;       
-    }
-  }
+
   :where(h1, h2, h3, h4, h5, h6) {
     font-family: var(--titles-font);
     font-weight: 700;
@@ -414,7 +394,7 @@
       display: block;
     }
     .aaog-submenu-title {
-      font-size: 1rem;
+      font-size: 1.25rem;
       font-weight: 700;
       line-height: 1.5;
       margin: 0.25rem 0;
@@ -448,6 +428,25 @@
       .aaog-submenu {
         margin-bottom: 0.25rem;
       }
+      nav {
+        grid-area: header;
+      }
+      main {
+        grid-area: main;
+      }
+      footer {
+        grid-area: footer;
+      }
+      .aaog-gral-wrapper {
+        display: grid;
+        grid-template-columns: [nav] 25% [main] 75%;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "header main"
+          ". footer";
+        max-width:  1300px;
+        margin: 0 auto;       
+      }
     }
     @media (min-width: 1200px) {
       header {
@@ -455,14 +454,14 @@
       }
       header figure {
         width: 7rem;
-        margin-top: 1rem;
+        margin: 0.5rem auto 0.5rem;
       }
       
     }
-    @media (min-width: 1400px) {
+    @media (min-width: 1300px) {
       header figure {
         width: 9rem;
-        margin-top: 1rem;
+        margin: 1rem auto;
       }
       nav a {
         font-size: 1.25rem;
@@ -476,6 +475,7 @@
   @media (min-width: 1300px) {
     main {
       padding: 0;
+      margin: 2.1rem 0 0;
     }
   }
  /* Footer */
@@ -495,18 +495,12 @@
 @media (min-width: 1024px) {
   .aaog-footer-inner {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     flex-wrap: wrap;
   }
   .aaog-footer-divider {
-    width: 33%;
-    border-bottom: 0;  
-    padding: 0 1rem;    
-  }
-  .aaog-footer-divider:nth-child(even) {
-    border-left: 0.5rem double var(--white-color); 
-    border-right: 0.5rem double var(--white-color);
+    padding: 1rem 0;    
   }
 }
   footer a {
@@ -521,6 +515,9 @@
   footer a:hover {
     border: var(--border-width) solid var(--white-color);
     color: var(--white-color)
+  }
+  footer h2 {
+    font-size: clamp(1.75rem, 3vw + 1rem, 2.5rem);
   }
    .aaog-socialmedia-container {
     list-style: none;

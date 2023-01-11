@@ -71,7 +71,7 @@
    }
    @media (min-width: 1200px) and (min-height: 950px) {
     .aaog-news-wrapper .aaog-news-container:first-child {
-      min-height: 74lvh;
+      min-height: 50lvh;
     }
    }
  @media (min-width: 1400px) {
