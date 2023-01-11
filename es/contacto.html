@@ -8,6 +8,8 @@
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
 </head>
 <body>
+    <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+    <div class="aaog-gral-wrapper">  
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
     <main id="main">
         <h1>Contacto</h1>
@@ -56,5 +58,6 @@
         </div>
     </main>
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
+</div>
 </body>
 </html>
