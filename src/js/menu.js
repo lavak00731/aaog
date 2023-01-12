@@ -80,18 +80,26 @@ export default class MyMenu {
     getIndex (collection, elem)  {
        return [].indexOf.call(collection, elem)  
      }
+     isHidden(el) {
+      return (el.offsetParent === null)
+    }
      getList(e) {
-      if((e.target.classList.contains('aaog-menuitem') && ( e.key === 'ArrowUp' || e.key === 'ArrowDown' ) )   || (e.target.classList.contains('aaog-menu-trigger') && e.key === 'ArrowDown')) {
-        return document.querySelectorAll('#navMenu a.aaog-menuitem');
-      } else  {
-        return document.querySelectorAll('#navMenu a:not(.aaog-menuitem), #navMenu button:not(.aaog-menuitem, .aaog-menu-opener)');
-      }
+      if(this.isHidden(document.querySelector('.aaog-submenu'))) {
+        if((e.target.classList.contains('aaog-menuitem') && ( e.key === 'ArrowUp' || e.key === 'ArrowDown' ) )   || (e.target.classList.contains('aaog-menu-trigger') && e.key === 'ArrowDown')) {
+          return document.querySelectorAll('#navMenu a.aaog-menuitem');
+        } else {
+          return document.querySelectorAll('#navMenu a:not(.aaog-menuitem), #navMenu button:not(.aaog-menuitem, .aaog-menu-opener)');  
+        }
+      } else { 
+        return document.querySelectorAll('#navMenu a, #navMenu button:not(.aaog-menuitem, .aaog-menu-opener)');
+      }      
      }
     keyBoardNav (e) {
-        e.preventDefault();
         const parentElemList =  this.getList(e);
+        e.preventDefault();
         switch (e.key) {
-            case 'ArrowRight':                
+            case 'ArrowRight':  
+
                 this.focusMovement(e, this.getIndex(parentElemList, e.target), parentElemList, 'right');
               break;
             case 'ArrowLeft':
@@ -116,8 +124,13 @@ export default class MyMenu {
         if(this.btnTrigger) {
             this.btnTrigger.addEventListener('click', this.menuOpenOrClosed.bind(this));
         }
-        this.innerBtns.forEach((btn)=> btn.addEventListener('mousedown', this.menuOpenOrClosed.bind(this)));
-        this.menuItems.forEach((item)=> item.addEventListener('keyup', this.keyBoardNav.bind(this)));
+        this.innerBtns.forEach((btn)=> btn.addEventListener('mousedown', this.menuOpenOrClosed.bind(this)), false);
+        this.menuItems.forEach((item)=> item.addEventListener('keyup',  this.keyBoardNav.bind(this)), false);
+        document.querySelector('#navMenu').addEventListener("keydown", function(e) {
+          if(["Space","ArrowUp","ArrowDown","ArrowLeft","ArrowRight"].indexOf(e.code) > -1) {
+              e.preventDefault();
+          }
+      }, false);
     } 
       
 }
