@@ -8,11 +8,12 @@
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
 </head>
 <body>
+    <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+    <div class="aaog-gral-wrapper">
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
     <main id="main">
         <article>
-            <h1>Productos - Pistolas</h1>
-            <p>Armas de avancarga utilizadas con una sola mano, en principio la caballer&iacute;a la adopt&oacute; y luego su uso se extendi&oacute; en el uso civil.</p>
+            <h1>Productos - Pistolas y Fusiles</h1>
             <p>Existen cuatro sistemas de ignici&oacute;n que nosotros fabricamos:
                 <ol>
                     <li>Mecha</li>
@@ -23,9 +24,9 @@
             </p>
             <div class="aaog-filter-trigger"></div>
             <div class="aaog-products-container">
-                <section class="aaog-product-wrapper">                    
+                <section class="aaog-product-wrapper" data-name="Pistola de Mecha" data-ignition="matchlock">                    
                     <figure>
-                        <img loading="lazy" src="src/imagenes/productos/pistolas/pistolademecha/pm_mecha1.jpg" alt="R&eacute;plica de la Pistola de Chispa que perteneci&oacute; al General Manuel Belgrano">
+                        <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolademecha/pm_mecha1.jpg" alt="R&eacute;plica de Pistola de Mecha">
                     </figure>
                     <h2>Pistola de Mecha</h2>
                     <p class="aaog-product-feature">
@@ -34,10 +35,47 @@
                     </p>  
                     <p class="aaog-codigo">C&oacute;digo:<strong> PM001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Mecha</span></a></p>
+                </section>
+                <section class="aaog-product-wrapper" data-name="Pistola de Mecha Japonesa" data-ignition="matchlock">                    
+                    <figure>
+                        <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolajaponesa/Kumamoto00.jpg" alt="R&eacute;plica de Pistola de Mecha Japonesa">
+                    </figure>
+                    <h2>Pistola de Mecha Japonesa</h2>
+                    <p class="aaog-product-feature">
+                        Tipo de Ignici&oacute;n:
+                        <span class="aaog-ignition-type">Llave de Mecha</span>  
+                    </p>  
+                    <p class="aaog-codigo">C&oacute;digo:<strong> PM002</strong></p>                 
+                    <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Mecha Japonesa</span></a></p>
+                </section>
+                <section class="aaog-product-wrapper" data-name="Mosquete de Mecha" data-ignition="matchlock">                    
+                    <figure>
+                        <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/mosquetemecha/mosqu_mecha1.jpg" alt="R&eacute;plica de Mosquete de Mecha">
+                    </figure>
+                    <h2>Mosquete de Mecha</h2>
+                    <p class="aaog-product-feature">
+                        Tipo de Ignici&oacute;n:
+                        <span class="aaog-ignition-type">Llave de Mecha</span>  
+                    </p>  
+                    <p class="aaog-codigo">C&oacute;digo:<strong> AL003</strong></p>                 
+                    <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Mosquete de Mecha</span></a></p>
+                </section>
+                <section class="aaog-product-wrapper" data-name="Pistola Alemana de Rueda 1632" data-ignition="wheellock">                    
+                    <figure>
+                        <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolarueda/pistoladerueda.jpg" alt="R&eacute;plica de Pistola Alemana de Rueda 1632">
+                    </figure>
+                    <h2>Pistola Alemana de Rueda 1632</h2>
+                    <p class="aaog-product-feature">
+                        Tipo de Ignici&oacute;n:
+                        <span class="aaog-ignition-type">Llave de Rueda</span>  
+                    </p>  
+                    <p class="aaog-codigo">C&oacute;digo:<strong> PAR001</strong></p>                 
+                    <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Alemana de Rueda 1632</span></a></p>
                 </section>        
             </div>
         </article>
     </main>
+    </div>
     <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
 </body>
 </html>
