@@ -605,9 +605,6 @@
 
 
  /* Productos Home */
- :root {
-  
- }
  .aaog-product-wrapper {
     padding: 1rem 1rem 2rem;
     border: var(--border-width) solid var(--dark-bg);
@@ -615,7 +612,7 @@
     flex-basis: 30%;
   }
   .aaog-product-wrapper figure {    
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
   }
   
   .aaog-product-wrapper img {
@@ -646,4 +643,28 @@
       margin: 2rem auto;  
     }
   }
-
+  
+:root {
+    --matchlock-color: #005f7a;
+    --wheellock-color: #6E0202;
+    --flintlock-color: #1A3787;
+    --percusion-color: #C21325;  
+   }
+[data-ignition] .aaog-ignition-type {
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+}
+[data-ignition="matchlock"] .aaog-ignition-type {
+    background-color: var(--matchlock-color);
+}
+[data-ignition="wheellock"] .aaog-ignition-type {
+    background-color: var(--wheellock-color);
+}
+[data-ignition="flintlock"] .aaog-ignition-type {
+    background-color: var(--flintlock-color);
+}
+[data-ignition="percusion"] .aaog-ignition-type {
+    background-color: var(--percusion-color);
+}

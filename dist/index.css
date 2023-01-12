@@ -689,9 +689,6 @@
  }
  
  /* Productos Home */
- :root {
-  
- }
  .aaog-product-wrapper {
     padding: 1rem 1rem 2rem;
     border: var(--border-width) solid var(--dark-bg);
@@ -699,7 +696,7 @@
     flex-basis: 30%;
   }
   .aaog-product-wrapper figure {    
-    aspect-ratio: 4 / 3;
+    aspect-ratio: 16 / 9;
   }
   
   .aaog-product-wrapper img {
@@ -730,3 +727,4 @@
       margin: 2rem auto;  
     }
   }
+  
