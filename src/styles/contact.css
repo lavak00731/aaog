@@ -1,15 +1,3 @@
-form {
-    --white-color: #FFF;
-    --black-color: #232020;
-    --light-bg: #F5E0B7;
-    --dark-bg: #4F5A69;
-    --interactive-color: #094376;
-    --border-radius: 0.25rem;
-    --border-width: 0.125rem;
-    --side-gap: 1rem;
-    max-width: 350px;
-
-}
 label {
     font-weight: 700;
     margin-bottom: 0.5rem;
