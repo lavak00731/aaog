@@ -308,16 +308,19 @@ export const addFilterByFeature = (pageName) => {
     const fragment = document.createDocumentFragment();
     dataToDisplay.forEach((filter)=>{
         const label = document.createElement('label')
-        label.setAttribute('for', filter.label);
+        label.setAttribute('for', filter.value);
         label.textContent = filter.label;
         const input = document.createElement('input');
         input.type = 'radio';
         input.classList.add('aaog-visuallyhidden');
-        input.id = filter.name;
+        input.id = filter.value;
         input.value = filter.value;
         input.name  = pageName;
-        fragment.appendChild(input);
-        fragment.appendChild(label);
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('.aaog-input-wrapper');
+        wrapper.appendChild(input);
+        wrapper.appendChild(label);
+        fragment.appendChild(wrapper);
     });
     target.appendChild(fragment);
 }

@@ -1,5 +1,6 @@
 import "./../styles/styles.css";
 import "./../styles/products.css";
+import "./../styles/contact.css";
 import "./../styles/productLanding.css";
 import { Shared } from "./shared";
 import { addListForFilteringByName, filterByName, resetSearch, addFilterByFeature } from './filters';
