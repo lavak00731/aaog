@@ -74,7 +74,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Trabuco Británica"
+                name: "Pistola Trabuco Britanica"
             },
             en: {
                 name: "English Blunderbuss Pistol"
@@ -82,7 +82,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Británica Sea Service"
+                name: "Pistola Britanica Sea Service"
             },
             en: {
                 name: "Sea Service Pistol"
@@ -98,7 +98,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Fusil Francés Charleville"
+                name: "Fusil Frances Charleville"
             },
             en: {
                 name: "Charleville French Musket"
@@ -106,7 +106,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola de Percusión Perkins"
+                name: "Pistola de Percusion Perkins"
             },
             en: {
                 name: "Perkins Dueling Pistol Percussion Version"
@@ -122,7 +122,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Kentucky Percusión"
+                name: "Pistola Kentucky Percusion"
             },
             en: {
                 name: "Kentucky Pistol"
@@ -154,7 +154,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Trabuco Naranjero Percusión"
+                name: "Trabuco Naranjero Percusion"
             },
             en: {
                 name: "Blunderbuss"
@@ -252,6 +252,7 @@ const pistolFilters = [
     }
     
 ];
+let names = [];
 export const addListForFilteringByName = (pageName, listLocation) => {
     const pageData = filtersByName[pageName];
     const target = document.getElementById(listLocation);
@@ -260,10 +261,40 @@ export const addListForFilteringByName = (pageName, listLocation) => {
         const optionList = document.createElement('option');        
         if(document.querySelector('html').lang === 'es') {
             optionList.textContent = product.es.name;
+            names.push(product.es.name)
         } else {
-            optionList.textContent = product.en.name; 
+            optionList.textContent = product.en.name;
+            names.push(product.en.name) 
         }
         fragment.appendChild(optionList);
     });
     target.appendChild(fragment)
+};
+export const filterByName = (name, listOfProducts) => {
+    name = name.normalize('NFD').replace(/\p{Diacritic}/gu, "");
+    if(names.includes(name)) {
+        listOfProducts.forEach((product)=>{        
+            if(product.dataset.name !== name) {
+                product.classList.add('filtered');
+                product.addEventListener('transitionend', ()=>{
+                    product.setAttribute('hidden', true);
+                })
+            } else {
+                product.classList.remove('filtered');
+                product.removeAttribute('hidden');
+            }       
+        });
+    } else {
+        listOfProducts.forEach((product) => {
+            product.setAttribute('hidden', true);
+        })
+        document.querySelector('#no-results').removeAttribute('hidden')
+    }        
+}
+export const resetSearch = (listOfProducts) => {
+    listOfProducts.forEach((product) => {
+        product.classList.remove('filtered');
+        product.removeAttribute('hidden');        
+    });
+    document.querySelector('#no-results').setAttribute('hidden', true);
 }

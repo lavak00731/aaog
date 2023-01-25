@@ -4,6 +4,7 @@
     border: var(--border-width) solid var(--dark-bg);
     margin-bottom: 1rem;
     flex-basis: 30%;
+    transition: opacity 0.5s;
   }
   .aaog-product-wrapper figure {    
     aspect-ratio: 16 / 9;
