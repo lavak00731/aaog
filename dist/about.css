@@ -1021,6 +1021,9 @@ div.pswp__img--placeholder,
     .aaog-menu-trigger[aria-expanded="true"] svg {
       transition: transform 1s;
     }
+    .filtered {
+      opacity: 0;
+    }
   }
 
 

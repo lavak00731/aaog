@@ -601,10 +601,13 @@
     .aaog-menu-trigger[aria-expanded="true"] svg {
       transition: transform 1s;
     }
+    .filtered {
+      opacity: 0;
+    }
   }
 
 
-label {
+label, legend {
     font-weight: 700;
     margin-bottom: 0.5rem;
     display: inline-block;
@@ -632,6 +635,12 @@ input:focus-visible, textarea:focus-visible {
     border-radius: var(--border-radius);
     padding: var(--side-gap);
     display: none;
+}
+fieldset {
+    border: 0;
+    padding: 0;
+    border-bottom: 0.125rem solid var(--black-color);
+    margin-bottom: 1rem;
 }
 @media (min-width: 768px) {
     .aaog-contact {
