@@ -285,14 +285,14 @@ export const filterByName = (name, listOfProducts) => {
         })
         document.querySelector('#no-results').removeAttribute('hidden')
     }        
-}
+};
 export const resetSearch = (listOfProducts) => {
     listOfProducts.forEach((product) => {
         product.classList.remove('filtered');
         product.removeAttribute('hidden');        
     });
     document.querySelector('#no-results').setAttribute('hidden', true);
-}
+};
 export const addFilterByFeature = (pageName) => {
     let filters;
     switch (pageName) {
@@ -323,4 +323,17 @@ export const addFilterByFeature = (pageName) => {
         fragment.appendChild(wrapper);
     });
     target.appendChild(fragment);
+};
+export const filterByFeature = (type, listOfProducts) => {
+    listOfProducts.forEach((product)=>{ 
+        if(product.dataset.feature !== type) {
+            product.classList.add('filtered');
+            product.addEventListener('transitionend', ()=>{
+                product.setAttribute('hidden', true);
+            })
+        } else {
+            product.classList.remove('filtered');
+            product.removeAttribute('hidden');
+        }
+    });
 }
