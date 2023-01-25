@@ -2,10 +2,10 @@ import "./../styles/styles.css";
 import "./../styles/products.css";
 import "./../styles/productLanding.css";
 import { Shared } from "./shared";
-import { addListForFilteringByName, filterByName, resetSearch } from './filters';
+import { addListForFilteringByName, filterByName, resetSearch, addFilterByFeature } from './filters';
 Shared();
 addListForFilteringByName('pistolsandrifles', 'pist');
-
+addFilterByFeature('pistolsandrifles')
 const productList = document.querySelectorAll('.aaog-product-wrapper');
 const searchTrigger = document.querySelector('#searchTrigger');
 const inputElem = document.querySelector('#inputSearch');

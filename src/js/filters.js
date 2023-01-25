@@ -74,7 +74,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Trabuco Britanica"
+                name: "Pistola Trabuco Británica"
             },
             en: {
                 name: "English Blunderbuss Pistol"
@@ -82,7 +82,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Britanica Sea Service"
+                name: "Pistola Británica Sea Service"
             },
             en: {
                 name: "Sea Service Pistol"
@@ -106,7 +106,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola de Percusion Perkins"
+                name: "Pistola de Percusión Perkins"
             },
             en: {
                 name: "Perkins Dueling Pistol Percussion Version"
@@ -122,7 +122,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Kentucky Percusion"
+                name: "Pistola Kentucky Percusión"
             },
             en: {
                 name: "Kentucky Pistol"
@@ -146,7 +146,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Austriaca"
+                name: "Pistola Austríaca"
             },
             en: {
                 name: "Austrian Pistol"
@@ -154,7 +154,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Trabuco Naranjero Percusion"
+                name: "Trabuco Naranjero Percusión"
             },
             en: {
                 name: "Blunderbuss"
@@ -162,7 +162,7 @@ const filtersByName = {
         },
         {
             es: {
-                name: "Pistola Austriaca Lorenz"
+                name: "Pistola Austríaca Lorenz"
             },
             en: {
                 name: "Austrian Lorenz Pistol"
@@ -211,61 +211,56 @@ const filtersByName = {
 
     ]
 };
-const pistolFilters = [
-    {
-        es: [
-            {
-                label: "Llave de Mecha",
-                value: "matchlock"
-            },
-            {
-                label: "Llave de Rueda",
-                value: "wheellock" 
-            },
-            {
-                label: "Llave de Pedernal",
-                value: "flintlock"
-            },
-            {
-                label: "Llave de Percusión",
-                value: "percussion"
-            }
-        ],
-        en: [
-            {
-                label: "Matchlock",
-                value: "matchlock"
-            },
-            {
-                label: "Wheellock",
-                value: "wheellock" 
-            },
-            {
-                label: "Flintlock",
-                value: "flintlock"
-            },
-            {
-                label: "Percussion",
-                value: "percussion"
-            }
-        ]
-    }
-    
-];
+const pistolFilters =  {
+    es: [
+        {
+            label: "Llave de Mecha",
+            value: "matchlock"
+        },
+        {
+            label: "Llave de Rueda",
+            value: "wheellock" 
+        },
+        {
+            label: "Llave de Pedernal",
+            value: "flintlock"
+        },
+        {
+            label: "Llave de Percusión",
+            value: "percussion"
+        }
+    ],
+    en: [
+        {
+            label: "Matchlock",
+            value: "matchlock"
+        },
+        {
+            label: "Wheellock",
+            value: "wheellock" 
+        },
+        {
+            label: "Flintlock",
+            value: "flintlock"
+        },
+        {
+            label: "Percussion",
+            value: "percussion"
+        }
+    ]
+};      
+ 
 let names = [];
+const sanitizeNames = (prodName) => prodName.normalize('NFD').replace(/\p{Diacritic}/gu, "");
 export const addListForFilteringByName = (pageName, listLocation) => {
     const pageData = filtersByName[pageName];
     const target = document.getElementById(listLocation);
     const fragment = document.createDocumentFragment();
     pageData.forEach((product)=>{
         const optionList = document.createElement('option');        
-        if(document.querySelector('html').lang === 'es') {
-            optionList.textContent = product.es.name;
-            names.push(product.es.name)
-        } else {
-            optionList.textContent = product.en.name;
-            names.push(product.en.name) 
-        }
+        optionList.textContent = product[document.querySelector('html').lang].name;
+        const name = sanitizeNames(product.es.name);
+        names.push(name);        
         fragment.appendChild(optionList);
     });
     target.appendChild(fragment)
@@ -297,4 +292,32 @@ export const resetSearch = (listOfProducts) => {
         product.removeAttribute('hidden');        
     });
     document.querySelector('#no-results').setAttribute('hidden', true);
+}
+export const addFilterByFeature = (pageName) => {
+    let filters;
+    switch (pageName) {
+        case 'pistolsandrifles':
+            filters = pistolFilters;
+            break;
+    
+        default:
+            break;
+    }
+    const dataToDisplay = filters[document.querySelector('html').lang];
+    const target = document.querySelector('#options');
+    const fragment = document.createDocumentFragment();
+    dataToDisplay.forEach((filter)=>{
+        const label = document.createElement('label')
+        label.setAttribute('for', filter.label);
+        label.textContent = filter.label;
+        const input = document.createElement('input');
+        input.type = 'radio';
+        input.classList.add('aaog-visuallyhidden');
+        input.id = filter.name;
+        input.value = filter.value;
+        input.name  = pageName;
+        fragment.appendChild(input);
+        fragment.appendChild(label);
+    });
+    target.appendChild(fragment);
 }
