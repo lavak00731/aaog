@@ -573,6 +573,9 @@ div.pswp__img--placeholder,
     .aaog-text-center {
       text-align: center;
     }
+    [hidden] {
+      display: none!important;
+    }
     @media (min-width: 768px) {
       .aaog-img-left {
         float: left;
@@ -658,8 +661,9 @@ div.pswp__img--placeholder,
       margin-right: 0.5rem;
     }
     @media (min-width: 768px) {
-      button, input[type="submit"], .aaog-btn {
+      .aaog-input-wrapper .aaog-btn, button, input[type="submit"], .aaog-btn {
         display: inline-block;
+        width: auto;
       }
     }    
     button:focus-visible, input[type="submit"]:focus-visible,
