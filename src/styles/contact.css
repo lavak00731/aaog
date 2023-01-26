@@ -33,6 +33,10 @@ fieldset {
     border-bottom: 0.125rem solid var(--black-color);
     margin-bottom: 1rem;
 }
+.aaog-help-text {
+    font-size: clamp(0.9rem, 1.2vw + 1rem, 1.125rem);
+    font-style: italic;
+}
 @media (min-width: 768px) {
     .aaog-contact {
         display: flex;

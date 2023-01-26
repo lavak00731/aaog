@@ -22,23 +22,27 @@
                     <li>Percusión</li>
                 </ol>
             </p>
-            <div class="aaog-filter-trigger">
+            <div class="aaog-input-wrapper aaog-text-center">
+                <button class="aaog-btn" id="filterTrigger" type="button" aria-controls="filters" aria-haspopup="true">Filtrar</button>
+            </div>
+            <div id="filters" class="aaog-filter-trigger" hidden>
                 <fieldset>
                     <div class="aaog-input-wrapper">
-                        <label for="inputSearch">Buscar por Nombre</label>
-                        <input type="text" list="pist" id="inputSearch" autocomplete="off"> 
+                        <label for="inputSearch">Buscar por Nombre de Producto</label>
+                        <input type="text" list="pist" id="inputSearch" autocomplete="off" aria-describedby="input-help">
+                        <p class="aaog-help-text" id="input-help">Por favor, seleccione alguno de los productos de la lista que se sugiere mientras escribe.</p> 
                         <datalist id="pist"></datalist>
                     </div>
-                    <div class="aaog-input-wrapper">
+                    <div class="aaog-input-wrapper aaog-text-center">
                         <button class="aaog-btn" type="button" id="searchTrigger">Buscar</button>
-                    </div>                   
+                    </div>
+                    <p id="no-results" hidden>No hay resultados para el t&eacute;rmino de b&uacute;squeda. Por favor, borre el campo de b&uacute;squeda hasta dejarlo vac&iacute;o e intentar de nuevo.</p>                           
                 </fieldset>
                 <fieldset>
                     <legend>Filtrar por tipo de ignici&oacute;n o llave</legend>
                     <div id="options"></div>
-                </fieldset>
-                <p id="no-results" hidden>No hay resultados para el t&eacute;rmino de b&uacute;squeda. Por favor, borre el campo de búsqueda hasta dejarlo vac&iacute;o e intentar de nuevo.</p>        
-            </div>
+                </fieldset>                
+            </div>            
             <div class="aaog-products-container">
                 <section class="aaog-product-wrapper" data-name="Pistola de Mecha" data-feature="matchlock">                    
                     <figure>
@@ -87,6 +91,18 @@
                     </p>  
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PAR001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Alemana de Rueda 1632</span></a></p>
+                </section>
+                <section class="aaog-product-wrapper" data-name="Pistola del General Manuel Belgrano" data-feature="flintlock">                    
+                    <figure>
+                        <img loading="lazy" src="src/imagenes/fotoreplicadepistoladebelgrano.jpg" alt="R&eacute;plica de Pistola del General Manuel Belgrano">
+                    </figure>
+                    <h2>Pistola del General Manuel Belgrano</h2>
+                    <p class="aaog-product-feature">
+                        Tipo de Ignici&oacute;n:
+                        <span class="aaog-ignition-type">Llave de Pedernal</span>  
+                    </p>  
+                    <p class="aaog-product-feature"><strong>Pistola de edici&oacute;n limitada</strong></p>                 
+                    <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola del General Manuel Belgrano</span></a></p>
                 </section>
                 <section class="aaog-product-wrapper" data-name="Pistola Light Dragoon" data-feature="flintlock">                    
                     <figure>

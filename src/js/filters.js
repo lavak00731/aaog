@@ -34,6 +34,14 @@ const filtersByName = {
         },
         {
             es: {
+                name: "Pistola del General Manuel Belgrano"
+            },
+            en: {
+                name: "General Manuel Belgrano Pistol"
+            }
+        },
+        {
+            es: {
                 name: "Pistola Light Dragoon"
             },
             en: {
@@ -214,19 +222,19 @@ const filtersByName = {
 const pistolFilters =  {
     es: [
         {
-            label: "Llave de Mecha",
+            label: "Mecha",
             value: "matchlock"
         },
         {
-            label: "Llave de Rueda",
+            label: "Rueda",
             value: "wheellock" 
         },
         {
-            label: "Llave de Pedernal",
+            label: "Pedernal",
             value: "flintlock"
         },
         {
-            label: "Llave de Percusión",
+            label: "Percusión",
             value: "percussion"
         }
     ],
@@ -265,6 +273,10 @@ export const addListForFilteringByName = (pageName, listLocation) => {
     });
     target.appendChild(fragment)
 };
+const showProduct = (product) => {
+    product.classList.remove('filtered');
+    product.removeAttribute('hidden');
+}
 export const filterByName = (name, listOfProducts) => {
     name = name.normalize('NFD').replace(/\p{Diacritic}/gu, "");
     if(names.includes(name)) {
@@ -275,8 +287,7 @@ export const filterByName = (name, listOfProducts) => {
                     product.setAttribute('hidden', true);
                 })
             } else {
-                product.classList.remove('filtered');
-                product.removeAttribute('hidden');
+                showProduct(product);
             }       
         });
     } else {
@@ -286,12 +297,16 @@ export const filterByName = (name, listOfProducts) => {
         document.querySelector('#no-results').removeAttribute('hidden')
     }        
 };
+const resetFilterByFeature = () => {
+    const inputs = document.querySelectorAll('#options input[type="radio"]');
+    inputs.forEach((input)=> input.checked = false)
+}
 export const resetSearch = (listOfProducts) => {
     listOfProducts.forEach((product) => {
-        product.classList.remove('filtered');
-        product.removeAttribute('hidden');        
+        showProduct(product);       
     });
     document.querySelector('#no-results').setAttribute('hidden', true);
+    resetFilterByFeature();
 };
 export const addFilterByFeature = (pageName) => {
     let filters;
@@ -317,7 +332,7 @@ export const addFilterByFeature = (pageName) => {
         input.value = filter.value;
         input.name  = pageName;
         const wrapper = document.createElement('div');
-        wrapper.classList.add('.aaog-input-wrapper');
+        wrapper.classList.add('aaog-input-wrapper');
         wrapper.appendChild(input);
         wrapper.appendChild(label);
         fragment.appendChild(wrapper);
@@ -332,8 +347,7 @@ export const filterByFeature = (type, listOfProducts) => {
                 product.setAttribute('hidden', true);
             })
         } else {
-            product.classList.remove('filtered');
-            product.removeAttribute('hidden');
+            showProduct(product);
         }
     });
 }
