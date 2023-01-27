@@ -493,6 +493,9 @@
   background-color: var(--dark-bg);
   color: var(--white-color);
 }
+footer h2 {
+  margin-top: 0 ;
+}
 .aaog-footer-inner {
   margin: 0 auto 2rem;
   max-width: 1300px;
