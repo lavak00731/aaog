@@ -14,37 +14,17 @@
     <main id="main">
         <article>
             <h1>Productos - Pistolas y Fusiles</h1>
-            <p>Existen cuatro sistemas de ignici&oacute;n que nosotros fabricamos:
-                <ol>
-                    <li>Mecha</li>
-                    <li>Rueda</li>
-                    <li>Chispa</li>
-                    <li>Percusión</li>
-                </ol>
-            </p>
-            <div class="aaog-input-wrapper aaog-text-center">
-                <button class="aaog-btn" id="filterTrigger" type="button" aria-controls="filters" aria-haspopup="true">Filtrar</button>
-            </div>
-            <div id="filters" class="aaog-filter-trigger" hidden>
+            <div id="filters" class="aaog-filter-trigger">                
                 <fieldset>
-                    <div class="aaog-input-wrapper">
-                        <label for="inputSearch">Buscar por Nombre de Producto</label>
-                        <input type="text" list="pist" id="inputSearch" autocomplete="off" aria-describedby="input-help">
-                        <p class="aaog-help-text" id="input-help">Por favor, seleccione alguno de los productos de la lista que se sugiere mientras escribe.</p> 
-                        <datalist id="pist"></datalist>
-                    </div>
-                    <div class="aaog-input-wrapper aaog-text-center">
-                        <button class="aaog-btn" type="button" id="searchTrigger">Buscar</button>
-                    </div>
-                    <p id="no-results" hidden>No hay resultados para el t&eacute;rmino de b&uacute;squeda. Por favor, borre el campo de b&uacute;squeda hasta dejarlo vac&iacute;o e intentar de nuevo.</p>                           
-                </fieldset>
-                <fieldset>
-                    <legend>Filtrar por tipo de ignici&oacute;n o llave</legend>
+                    <legend>Existen cuatro sistemas de ignici&oacute;n que nosotros fabricamos:</legend>
                     <div id="options"></div>
-                </fieldset>                
+                </fieldset>
+                <div class="aaog-input-wrapper aaog-text-center">
+                    <button class="aaog-btn" type="button" id="resetTrigger">Limpiar Filtro</button>
+                </div>              
             </div>            
             <div class="aaog-products-container">
-                <section class="aaog-product-wrapper" data-name="Pistola de Mecha" data-feature="matchlock">                    
+                <section class="aaog-product-wrapper" data-feature="matchlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolademecha/pm_mecha1.jpg" alt="R&eacute;plica de Pistola de Mecha">
                     </figure>
@@ -56,7 +36,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PM001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Mecha</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola de Mecha Japonesa" data-feature="matchlock">                    
+                <section class="aaog-product-wrapper" data-feature="matchlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolajaponesa/Kumamoto00.jpg" alt="R&eacute;plica de Pistola de Mecha Japonesa">
                     </figure>
@@ -68,7 +48,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PM002</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Mecha Japonesa</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Mosquete de Mecha" data-feature="matchlock">                    
+                <section class="aaog-product-wrapper" data-feature="matchlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/mosquetemecha/mosqu_mecha1.jpg" alt="R&eacute;plica de Mosquete de Mecha">
                     </figure>
@@ -80,7 +60,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> AL003</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Mosquete de Mecha</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Alemana de Rueda 1632" data-feature="wheellock">                    
+                <section class="aaog-product-wrapper" data-feature="wheellock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolarueda/pistoladerueda.jpg" alt="R&eacute;plica de Pistola Alemana de Rueda 1632">
                     </figure>
@@ -92,7 +72,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PAR001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Alemana de Rueda 1632</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola del General Manuel Belgrano" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/fotoreplicadepistoladebelgrano.jpg" alt="R&eacute;plica de Pistola del General Manuel Belgrano">
                     </figure>
@@ -104,7 +84,7 @@
                     <p class="aaog-product-feature"><strong>Pistola de edici&oacute;n limitada</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola del General Manuel Belgrano</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Light Dragoon" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolalightdragon/dragoon01.jpg" alt="R&eacute;plica de Pistola Light Dragoon">
                     </figure>
@@ -116,7 +96,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PC002</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Light Dragoon</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Kentucky" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolakentucky/kent_ch1.jpg" alt="R&eacute;plica de Pistola Kentucky">
                     </figure>
@@ -128,7 +108,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PC003</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Kentucky</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Harper's Ferry" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolaharpersferry/pc004n_imagen.jpg" alt="R&eacute;plica de Pistola Harper's Ferry">
                     </figure>
@@ -140,7 +120,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PC004</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Harper's Ferry</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Le Page Moutier version Pedernal" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolalepagemoutier/lepagechispa00.jpg" alt="R&eacute;plica de Le Page Moutier version Pedernal">
                     </figure>
@@ -152,7 +132,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PC006</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Le Page Moutier version Pedernal</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola de Duelo Inglesa Perkins" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolaperkins/perkins011.jpg" alt="R&eacute;plica de Pistola de Duelo Inglesa Perkins">
                     </figure>
@@ -164,7 +144,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PC007</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Duelo Inglesa Perkins</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Trabuco Britanica" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolatrabucobritanica/trabucopistola00.jpg" alt="R&eacute;plica de Pistola Trabuco Brit&aacute;nica">
                     </figure>
@@ -176,7 +156,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PC008</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Trabuco Brit&aacute;nica</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Britanica Sea Service" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolaseaservice/seaservice00.jpg" alt="R&eacute;plica de Pistola Trabuco Brit&aacute;nica">
                     </figure>
@@ -188,7 +168,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> SEA001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Brit&aacute;nica Sea Service</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Mosquete Brown Bess" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/riflebbess/bbess1.jpg" alt="R&eacute;plica de Brown Bess">
                     </figure>
@@ -200,7 +180,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> AL002</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Mosquete Brown Bess</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Fusil Frances Charleville" data-feature="flintlock">                    
+                <section class="aaog-product-wrapper" data-feature="flintlock">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/fusilcharleville/charleville00.jpg" alt="R&eacute;plica de Fusil Franc&eacute;s Charleville">
                     </figure>
@@ -212,7 +192,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> AL004</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Fusil Franc&eacute;s Charleville</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola de Percusion Perkins" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolaperkinspercusion/perkinspercusion00.jpg" alt="R&eacute;plica de Pistola de Percusiòn Perkins">
                     </figure>
@@ -224,7 +204,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PE021</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Percusiòn Perkins</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Le Page Moutier" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolalepagepercusion/lepage00.jpg" alt="R&eacute;plica de Pistola Le Page Moutier">
                     </figure>
@@ -236,7 +216,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PLE011</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Le Page Moutier</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Kentucky Percusion" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolakentuckypercusion/pp001_imagen.jpg" alt="R&eacute;plica de Pistola Kentucky Percusi&oacute;n">
                     </figure>
@@ -248,7 +228,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Kentucky Percusi&oacute;n</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Enfield (Barnett)" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett00.jpg" alt="R&eacute;plica de Pistola Enfield (Barnett)">
                     </figure>
@@ -260,7 +240,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP002</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Kentucky Percusi&oacute;n</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Aston" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolaaston/aston1.jpg" alt="R&eacute;plica de Pistola Aston">
                     </figure>
@@ -272,7 +252,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP003</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Aston</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Austriaca" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolaaustriaca/pp005_imagen.jpg" alt="R&eacute;plica de Pistola Austr&iacute;aca">
                     </figure>
@@ -284,7 +264,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP005</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Austr&iacute;aca</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Trabuco Naranjero Percusion" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolatrabucopercusion/trabperc00.jpg" alt="R&eacute;plica de Trabuco Naranjero Percusi&oacute;n">
                     </figure>
@@ -296,7 +276,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP014</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Trabuco Naranjero Percusi&oacute;n</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Austriaca Lorenz" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolalorenz/pp016.jpg" alt="R&eacute;plica de Pistola Austr&iacute;aca Lorenz">
                     </figure>
@@ -308,7 +288,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP016</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Austr&iacute;aca Lorenz</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Pistola Le Page Moutier a Paris (octogonal)" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolalepagemoutieroctogonal/12estrias81.jpg" alt="R&eacute;plica de Pistola Le Page Moutier a Paris (octogonal)">
                     </figure>
@@ -320,7 +300,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> PP020</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola Le Page Moutier a Paris (octogonal)</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Kentucky Rifle" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/riflekentucky/frontier1.jpg" alt="R&eacute;plica de Kentucky Rifle">
                     </figure>
@@ -332,7 +312,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> AL001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Kentucky Rifle</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Rifle Big Bore" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/riflebigbore/img_20190411_110107.jpg" alt="R&eacute;plica de Rifle Big Bore">
                     </figure>
@@ -344,7 +324,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> BBR01</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Rifle Big Bore</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Escopeta Underhammer Golden Shotgun" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/escopetaunderhammer/escopetagatto00.jpg" alt="R&eacute;plica de Escopeta Underhammer Golden Shotgun">
                     </figure>
@@ -356,7 +336,7 @@
                     <p class="aaog-product-feature">C&oacute;digo:<strong> ESC001</strong></p>                 
                     <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Escopeta Underhammer Golden Shotgun</span></a></p>
                 </section>
-                <section class="aaog-product-wrapper" data-name="Rifle Underhammer Golden Boy" data-feature="percussion">                    
+                <section class="aaog-product-wrapper" data-feature="percussion">                    
                     <figure>
                         <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/rifleunderhammergoldenboy/runderhammer00.jpg" alt="R&eacute;plica de Rifle Underhammer Golden Boy">
                     </figure>
