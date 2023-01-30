@@ -24,6 +24,9 @@ const config = {
     },
     pistolsLanding: {
       import: "./src/js/pistolsLanding.js"
+    },
+    artilleryLanding: {
+      import: "./src/js/artilleryLanding.js"
     }  
   },
   output: {
@@ -63,6 +66,13 @@ const config = {
       filename: "pistolasyfusiles.html",
       filePath: folderPathEs,
       chunks: ['pistolsLanding'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./es/productos/artilleria.html",
+      filename: "artilleria.html",
+      filePath: folderPathEs,
+      chunks: ['artilleryLanding'],
       inject: 'body'
     }),
     new MiniCssExtractPlugin(),

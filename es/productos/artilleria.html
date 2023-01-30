@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Armas Antiguas Osvaldo Gatto - Inicio</title>
+    <title>Armas Antiguas Osvaldo Gatto - Artiller&iacute;a</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
 </head>
 <body>
-    
+    <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+    <div class="aaog-gral-wrapper">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>    
+        <main id="main">
+            <article>
+                <h1>Productos - Artiller&iacute;a</h1>
+                <div id="filters" class="aaog-filter-trigger">                
+                    <fieldset>
+                        <legend>Existen cuatro sistemas de ignici&oacute;n que nosotros fabricamos:</legend>
+                        <div id="options"></div>
+                    </fieldset>
+                    <div class="aaog-input-wrapper aaog-text-center">
+                        <button class="aaog-btn" type="button" id="resetTrigger">Limpiar Filtro</button>
+                    </div>              
+                </div>            
+                <div class="aaog-products-container">
+                    <section class="aaog-product-wrapper" data-feature="matchlock">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/pistolasyfusiles/pistolademecha/pm_mecha1.jpg" alt="R&eacute;plica de Pistola de Mecha">
+                        </figure>
+                        <h2>Pistola de Mecha</h2>
+                        <p class="aaog-product-feature">
+                            Tipo de Ignici&oacute;n:
+                            <span class="aaog-ignition-type">Mecha</span>  
+                        </p>  
+                        <p class="aaog-product-feature">C&oacute;digo:<strong> PM001</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Pistola de Mecha</span></a></p>
+                    </section>
+                </div>
+            </article>
+        </main>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
+    </div>
 </body>
 </html>

@@ -36,7 +36,36 @@ const pistolFilters =  {
         }
     ]
 };      
- 
+const artilleryFilters = {
+    es: [
+        {
+            label: "Campo",
+            value: "field"
+        },
+        {
+            label: "Naval",
+            value: "navy"
+        },
+        {
+           label: "Mortero",
+           value: "mortar"
+        }
+    ],
+    en: [
+        {
+            label: "Field",
+            value: "field"
+        },
+        {
+            label: "Navy",
+            value: "navy"
+        },
+        {
+           label: "Mortar",
+           value: "mortar"
+        }
+    ]
+}
 const showProduct = (product) => {
     product.classList.remove('filtered');
     product.removeAttribute('hidden');
@@ -56,7 +85,9 @@ export const addFilterByFeature = (pageName) => {
         case 'pistolsandrifles':
             filters = pistolFilters;
             break;
-    
+            case 'artillery':
+                filters = artilleryFilters;
+                break;
         default:
             break;
     }
