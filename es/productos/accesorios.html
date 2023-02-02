@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas Antiguas Osvaldo Gatto - Accesorios</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
+</head>
+<body>
+    <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+    <div class="aaog-gral-wrapper">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>    
+        <main id="main">
+            <article>
+                <h1>Productos - Accesorios</h1>
+                <div class="aaog-products-container">
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/molde.jpg" alt="Moldes para Municiones esféricas">
+                        </figure>
+                        <h2>Moldes para Municiones esf&eacute;ricas</h2>
+                        <p class="aaog-product-feature">C&oacute;digo:<strong> Molde</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Moldes para Municiones esféricas</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/dosificador1.jpg" alt="Dosificador Variable">
+                        </figure>
+                        <h2>Dosificador Variable</h2>                        
+                        <p class="aaog-product-feature">C&oacute;digo:<strong> Dosificador</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Dosificador Variable</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/ac001_imagen.jpg" alt="Cuerno Polvorero">
+                        </figure>
+                        <h2>Cuerno Polvorero</h2>
+                        <p class="aaog-product-feature">C&oacute;digo:<strong> AC001</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Cuerno Polvorero</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/martillo.jpg" alt="Martillo triple acci&oacute;n">
+                        </figure>
+                        <h2>Martillo triple acci&oacute;n</h2>
+                        <p class="aaog-product-feature">Martillo/Iniciador y Baqueta de carga, todo en uno (para armas cortas)</p>
+                        <p class="aaog-product-feature">C&oacute;digo:<strong> AC002</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Martillo triple acci&oacute;n</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/polvorera.jpg" alt="Polvorera">
+                        </figure>
+                        <h2>Polvorera</h2>                        
+                        <p class="aaog-product-feature">C&oacute;digo:<strong> Polvorera</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Ver m&aacute;s <span class="aaog-visuallyhidden">Polvorera"</span></a></p>
+                    </section>                                                           
+                </div>
+            </article>
+        </main>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
+    </div>
+</body>
+</html>

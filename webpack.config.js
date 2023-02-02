@@ -75,6 +75,13 @@ const config = {
       chunks: ['artilleryLanding'],
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      template: "./es/productos/accesorios.html",
+      filename: "accesorios.html",
+      filePath: folderPathEs,
+      chunks: ['index'],
+      inject: 'body'
+    }),
     new MiniCssExtractPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
