@@ -19,5 +19,5 @@ export function TransLate() {
         const newPath = transformPath(urlPath);
         btn.href = newPath;
     };
-    checkLang()
+    checkLang();
 }
