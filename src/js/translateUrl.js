@@ -1,7 +1,6 @@
 export function TransLate() {
     const lang = document.documentElement.lang;
     const urlPath = window.location.pathname;
-    console.log(urlPath)
     const btn = document.querySelector('.aaog-translate-btn');
     const transformPath = (path) => {
         if(path[path.length - 1] === '/' ) {
