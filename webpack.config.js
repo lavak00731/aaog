@@ -5,6 +5,7 @@ let fs = require('fs');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const folderPathEs = path.resolve(__dirname, "es/componentes");
+const folderPathEn = path.resolve(__dirname, "en/componentes");
 const isProduction = process.env.NODE_ENV == "production";
 
 const stylesHandler = isProduction
@@ -44,6 +45,13 @@ const config = {
       template: "index.html",
       filename: "index.html",
       filePath: folderPathEs,
+      chunks: ['index'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./en/indexeng.html",
+      filename: "indexeng.html",
+      filePath: folderPathEn,
       chunks: ['index'],
       inject: 'body'
     }),

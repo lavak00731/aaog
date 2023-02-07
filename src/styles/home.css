@@ -62,7 +62,10 @@
     .aaog-news-wrapper .aaog-news-container:first-child .aaog-news--text-wrapper {
       padding: 2rem;
       background-color: rgba(0,0,0, 80%);
-      width: 45%;
+      width: 60%;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
     }
     .aaog-news-wrapper .aaog-news-container:focus-within .aaog-news--text-wrapper {
       background-color: rgba(255,255,255, 80%);

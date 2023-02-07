@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/lavak00731/aaog#readme",
   "devDependencies": {
-    "@babel/core": "^7.20.2",
+    "@babel/core": "^7.20.12",
     "@babel/preset-env": "^7.20.2",
     "@webpack-cli/generators": "^3.0.0",
     "babel-loader": "^9.1.0",

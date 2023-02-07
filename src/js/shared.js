@@ -1,4 +1,5 @@
 import MyMenu from "./menu";
+import { TransLate } from "./translateUrl";
   
 export function Shared () {
     function importAll(r) {
@@ -8,4 +9,5 @@ export function Shared () {
 
     const menu = new MyMenu('navMenu', 'menuTrigger', 'aaog-menu-trigger');
     menu.init();
+    TransLate();
 } 
