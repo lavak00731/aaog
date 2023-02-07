@@ -4,7 +4,7 @@ export function TransLate() {
     console.log(urlPath)
     const btn = document.querySelector('.aaog-translate-btn');
     const transformPath = (path) => {
-        if(path === '/') {
+        if(path[path.length - 1] === '/' ) {
             return 'indexeng.html';
         }
         if(lang === 'es') {
