@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas Antiguas Osvaldo Gatto - Accessories</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
+</head>
+<body>
+    <a href="#main" class="aaog-skip-link">Go to main content</a>
+    <div class="aaog-gral-wrapper">
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/headereng.html') %>    
+        <main id="main">
+            <article>
+                <h1>Products - Accessories</h1>
+                <div class="aaog-products-container">
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/molde-removebg.png" alt="Round ball Molds">
+                        </figure>
+                        <h2>Round ball Molds</h2>
+                        <p class="aaog-product-feature">Code:<strong> Molde</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Check this out <span class="aaog-visuallyhidden">Round ball Molds</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/dosificador1-removebg.png" alt="Easy Volumetric measurements">
+                        </figure>
+                        <h2>Easy Volumetric measurements</h2>                        
+                        <p class="aaog-product-feature">Code:<strong> Dosificador</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Check this out <span class="aaog-visuallyhidden">Easy Volumetric measurements</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/ac001_imagen.jpg" alt="Black powder horn container">
+                        </figure>
+                        <h2>Black powder horn container</h2>
+                        <p class="aaog-product-feature">Code:<strong> AC001</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Check this out <span class="aaog-visuallyhidden">Black powder horn container</span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/martillo.jpg" alt="Multiple function charger hammer">
+                        </figure>
+                        <h2>Multiple function charger hammer</h2>
+                        <p class="aaog-product-feature">It is a hammer, a charging starter and ramrod, all in one.</p>
+                        <p class="aaog-product-feature">Code:<strong> AC002</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Check this out <span class="aaog-visuallyhidden">Multiple function charger hammer
+                        </span></a></p>
+                    </section>
+                    <section class="aaog-product-wrapper">                    
+                        <figure>
+                            <img loading="lazy" src="src/imagenes/productos/accesorios/polvorera.jpg" alt="Walnut powder flask">
+                        </figure>
+                        <h2>Walnut powder flask</h2>                        
+                        <p class="aaog-product-feature">Code:<strong> Polvorera</strong></p>                 
+                        <p class="aaog-text-center"><a href="/es/productos/pistolas.html" class="aaog-btn">Check this out <span class="aaog-visuallyhidden">Walnut powder flask</span></a></p>
+                    </section>                                                           
+                </div>
+            </article>
+        </main>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footereng.html') %>
+    </div>
+</body>
+</html>

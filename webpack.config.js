@@ -97,6 +97,13 @@ const config = {
       chunks: ['index'],
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      template: "./en/productos/accesorioseng.html",
+      filename: "accesorioseng.html",
+      filePath: folderPathEn,
+      chunks: ['index'],
+      inject: 'body'
+    }),
     new MiniCssExtractPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
