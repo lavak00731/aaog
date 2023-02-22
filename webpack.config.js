@@ -70,6 +70,13 @@ const config = {
       inject: 'body'
     }),
     new HtmlWebpackPlugin({
+      template: "./en/contactoeng.html",
+      filename: "contactoeng.html",
+      filePath: folderPathEn,
+      chunks: ['contact'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
       template: "./es/productos/pistolasyfusiles.html",
       filename: "pistolasyfusiles.html",
       filePath: folderPathEs,
