@@ -167,6 +167,9 @@
         width: 48%;
         margin-left: 2rem;
       }
+      .aaog-overflow-hidden {
+        overflow: hidden;
+      }
     }
     .aaog-img-left {
       float: left;
