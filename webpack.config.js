@@ -63,6 +63,13 @@ const config = {
       inject: 'body'
     }),
     new HtmlWebpackPlugin({
+      template: "./en/sobrenosotroseng.html",
+      filename: "sobrenosotroseng.html",
+      filePath: folderPathEn,
+      chunks: ['about'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
       template: "./es/contacto.html",
       filename: "contacto.html",
       filePath: folderPathEs,
