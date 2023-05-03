@@ -28,7 +28,10 @@ const config = {
     },
     artilleryLanding: {
       import: "./src/js/artilleryLanding.js"
-    }  
+    },
+    product: {
+      import: "./src/js/product.js"
+    } 
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -123,6 +126,14 @@ const config = {
       filename: "accesorioseng.html",
       filePath: folderPathEn,
       chunks: ['index'],
+      inject: 'body'
+    }),
+    /* Products */
+    new HtmlWebpackPlugin({
+      template: "./es/productos/pistolas/barnett.html",
+      filename: "barnett.html",
+      filePath: folderPathEs,
+      chunks: ['product'],
       inject: 'body'
     }),
     new MiniCssExtractPlugin(),

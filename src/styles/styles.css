@@ -418,7 +418,7 @@
       header {
         position: sticky;
         top: 0;
-        max-height: 100lvh;
+        height: 100lvh;
       }
       .aaog-menu-opener {
         display: none;

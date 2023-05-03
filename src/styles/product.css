@@ -1,0 +1,43 @@
+/* Product Page */
+.aaog-breadcrum {
+    padding: 0.5rem 0;
+    width: 100%;
+}
+.aaog-breadcrum ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+}
+.aaog-breadcrum ul li {
+    flex-basis: 31%;
+    position: relative;
+    vertical-align: middle;
+}
+.aaog-breadcrum ul li::after {
+    content: '>';
+    position: absolute;
+    right: 0.25rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.aaog-breadcrum ul li:last-child::after {
+    display: none;
+}
+.aaog-breadcrum a {
+    padding: 0.2rem;
+    display: inline-block;
+    border: 0;
+    font-size: clamp(0.875rem, 0.7934rem + 0.4082vw, 1.125rem);
+}
+.aaog-code {
+    font-size: clamp(0.875rem, 0.7934rem + 0.4082vw, 1.125rem);
+    vertical-align: middle;
+    background-color: var(--dark-bg);
+    color: var(--white-color);
+    font-weight: 700;
+    padding: 0.5rem;
+    display: inline-block;
+}

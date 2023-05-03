@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Armas Antiguas Osvaldo Gatto - Pistola Barnett</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/favicon.html') %>
+</head>
+<body>
+    <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+    <div class="aaog-gral-wrapper">        
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
+        <main id="main">
+            <article>
+                <nav aria-describedby="breadcrum" class="aaog-breadcrum">
+                    <p hidden="hidden" id="breadcrum">Navegaci&oacute;n hasta esta p&aacute;gina</p>
+                    <ul>
+                        <li><a href="/">Inicio</a></li>
+                        <li><a href="pistolasyfusiles.html">Pistolas y Fusiles</a></li>
+                        <li><a href="barnett.html" aria-current="page">Pistola Barnet</a></li>
+                    </ul>
+                </nav>
+                <section class="aaog-product-header" aria-describedby="maintitle">
+                    <h1 id="maintitle">Pistola Enfield (Barnett)</h1>
+                    <p class="aaog-code">Código: PP002</p>
+                    <div class="aaog-image-gallery-wrapper">
+                        <figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett00.jpg" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                        <figure><img src="" alt=""></figure>
+                    </div>
+                </section>
+                <section class="aaog-product-description">
+                    <p>Fabricada por muchas empresas, una de las m&aacute;s prestigiosas fue la Barnett de Londres.</p>
+                    <p>Se us&oacute; en la marina y en la caballer&iacute;a. El modelo que se reproduce, estuvo al servicio del Imperio del Brasil en la guerra del Paraguay (1865-70).</p>
+                    <p>Si uno busca este modelo de pistola en los cat&aacute;logos de la armer&iacute;a real no la va a encontrar o la va a encontrar en un apartado donde se menciona que perteneci&oacute; a las Indias occidentales ya que los ingleses ten&iacute;an por costumbre fabricar armas de acuerdo al lugar donde iban a ejercer su dominio. Tanto es as&iacute; que tuvo una versi&oacute;n de las Indias orientales muy parecida pero diferenci&aacute;ndose de 
+                        &eacute;sta en que el pomo o remate es plano y posee una argolla fija dando la impresi&oacute;n de ser una pistola m&aacute;s corta.</p>
+                </section>
+                <section class="aaog-product-data"></section>
+                <div hidden class="aaog-modal" tabindex="-1" aria-describedby="modalTitle">
+                    <form action=""></form>
+                </div>
+            </article>        
+        </main>
+        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
+    </div>   
+</body>
+</html>
