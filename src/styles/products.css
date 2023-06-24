@@ -29,6 +29,10 @@
   .aaog-product-wrapper h2 {
     margin: calc( 1ex / 0.50 ) 0;
   }
+  .aaog-products-container  {
+    list-style: none;
+    padding-left: 0;
+  }
   @media (min-width: 768px) {
     .aaog-products-container {
       display: grid;

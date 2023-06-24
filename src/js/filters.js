@@ -66,6 +66,11 @@ const artilleryFilters = {
         }
     ]
 }
+const totalItems = {
+    es: " productos",
+    en: " products"
+}
+
 const showProduct = (product) => {
     product.classList.remove('filtered');
     product.removeAttribute('hidden');
@@ -77,8 +82,12 @@ export const resetFilterByFeature = (productList) => {
     productList.forEach((product) => {
         showProduct(product);
     });
+    amountRendering();
 }
-
+const amountRendering = () => {
+    const quantityProd = document.querySelector('#productQuatity');
+    quantityProd.innerHTML = `<span>${document.querySelectorAll('.aaog-product-wrapper:not(.filtered)').length}</span> ${totalItems[document.querySelector('html').lang]}`;
+}
 export const addFilterByFeature = (pageName) => {
     let filters;
     switch (pageName) {
@@ -110,7 +119,8 @@ export const addFilterByFeature = (pageName) => {
         wrapper.appendChild(label);
         fragment.appendChild(wrapper);
     });
-    target.appendChild(fragment);
+    target.appendChild(fragment);  
+    amountRendering();  
 };
 export const filterByFeature = (type, listOfProducts) => {
     listOfProducts.forEach((product)=>{ 
@@ -123,4 +133,5 @@ export const filterByFeature = (type, listOfProducts) => {
             showProduct(product);
         }
     });
+    amountRendering();
 }
