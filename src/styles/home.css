@@ -3,6 +3,10 @@
  .aaog-news-container {
    margin: 0 0 2rem;
  }
+ .aaog-news-container {
+  list-style: none;
+  padding: 0;
+ }
  /* Home News Section */
  .new-date {
    margin-bottom: 1.5rem;
