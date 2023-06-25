@@ -2,6 +2,8 @@
 .aaog-breadcrum {
     padding: 0.5rem 0;
     width: 100%;
+    border-radius:  var(--border-radius);
+    border: var(--border-width) solid var(--dark-bg);
 }
 .aaog-breadcrum ul {
     display: flex;
@@ -41,3 +43,4 @@
     padding: 0.5rem;
     display: inline-block;
 }
+.aaog-image-gallery-wrapper{}
