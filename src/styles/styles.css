@@ -600,12 +600,15 @@ footer h2 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: stretch;
+    list-style: none;
+    gap: 2rem;
+    padding: 0;
   }
-  .aaog-video-gallery figure {
+  .aaog-video-gallery li {
       width: 100%;
   }
   @media (min-width: 768px) {
-    .aaog-video-gallery figure {
+    .aaog-video-gallery li {
       width: 48%;
     }
   }
