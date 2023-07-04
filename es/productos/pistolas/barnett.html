@@ -1,88 +1,279 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Armas Antiguas Osvaldo Gatto - Pistola Barnett</title>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/favicon.html') %>
-</head>
-<body>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/fontfiles.html') %> <%=
+    require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/favicon.html') %>
+  </head>
+  <body>
     <a href="#main" class="aaog-skip-link">Ir al contenido</a>
-    <div class="aaog-gral-wrapper">        
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/header.html') %>
-        <main id="main">
-            <article>
-                <nav aria-describedby="breadcrum" class="aaog-breadcrum">
-                    <p hidden="hidden" id="breadcrum">Navegaci&oacute;n hasta esta p&aacute;gina</p>
-                    <ul>
-                        <li><a href="/">Inicio</a></li>
-                        <li><a href="pistolasyfusiles.html">Pistolas y Fusiles</a></li>
-                        <li><a href="barnett.html" aria-current="page">Pistola Barnet</a></li>
-                    </ul>
-                </nav>
-                <section class="aaog-product-header" aria-describedby="maintitle">
-                    <h1 id="maintitle">Pistola Enfield (Barnett)</h1>
-                    <p class="aaog-code">Código: PP002</p>
-                    <ul id="product-gallery" class="aaog-image-gallery-wrapper">
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett01.jpg" alt="Pistola Barnett vista desde la platina"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett02.jpg" alt="Pistola Barnett vista desde la contraplatina"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett03.jpg" alt="Detalle del ca&ntilde;on"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett04.jpg" alt="Vista lateral de la pistola sobre un lienzo"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett05.jpg" alt="Detalle de la baqueta basculante"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett06.jpg" alt="Comparación pistola Enfield original y nuestra r&eacute;plica"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_141859.jpg" alt="Pistola Enfield sobre lienzo con inscripci&oacute;n en la platina"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_141952.jpg" alt="Pistola Enfield vista desde la contraplatina"></figure></li>
-                        <li><figure><img src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_142248.jpg" alt=""></figure></li>
-                    </ul>
-                </section>
-                <section class="aaog-product-description" aria-labelledby="description">
-                    <h2 id="description">Descripci&oacute;n</h2>
-                    <p>Fabricada por muchas empresas, una de las m&aacute;s prestigiosas fue la Barnett de Londres.</p>
-                    <p>Se us&oacute; en la marina y en la caballer&iacute;a. El modelo que se reproduce, estuvo al servicio del Imperio del Brasil en la guerra del Paraguay (1865-70).</p>
-                    <p>Si uno busca este modelo de pistola en los cat&aacute;logos de la armer&iacute;a real no la va a encontrar o la va a encontrar en un apartado donde se menciona que perteneci&oacute; a las Indias occidentales ya que los ingleses ten&iacute;an por costumbre fabricar armas de acuerdo al lugar donde iban a ejercer su dominio. Tanto es as&iacute; que tuvo una versi&oacute;n de las Indias orientales muy parecida pero diferenci&aacute;ndose de 
-                        &eacute;sta en que el pomo o remate es plano y posee una argolla fija dando la impresi&oacute;n de ser una pistola m&aacute;s corta.</p>
-                </section>
-                <section class="aaog-product-data" aria-labelledby="data">
-                    <h2 id="data">Caracter&iacute;sticas</h2>
-                    <table class="aaog-product-table">
-                        <tr>
-                            <th><strong>Ca&ntilde;on: </strong></th>
-                            <td>de acero, exterior, c&oacute;nico, interior liso (como su original)</td>
-                        </tr>
-                        <tr>
-                            <th><strong>Calibre: </strong></th>
-                            <td>.58</td>
-                        </tr>
-                        <tr>
-                            <th><strong>Llave: </strong></th>
-                            <td>de percusi&oacute;n delantera</td>
-                        </tr>
-                        <tr>
-                            <th><strong>Cure&ntilde;a: </strong></th>
-                            <td>de nogal</td>
-                        </tr>
-                        <tr>
-                            <th><strong>Guarniciones: </strong></th>
-                            <td>de lat&oacute;n pulido</td>
-                        </tr>
-                        <tr>
-                            <th><strong>Baqueta: </strong></th>
-                            <td>basculante</td>
-                        </tr>
-                        <tr>
-                            <th><strong>Peso: </strong></th>
-                            <td>1350 gramos aproximadamente</td>
-                        </tr>
-                    </table>
-                </section>
-                <div role="dialog" aria-modal="true" hidden class="aaog-modal" tabindex="-1" aria-describedby="modalTitle">
-                    <form action=""></form>
-                </div>
-            </article>        
-        </main>
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footer.html') %>
-    </div>   
-</body>
+    <div class="aaog-gral-wrapper">
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/header.html') %>
+      <main id="main">
+        <article>
+          <nav aria-describedby="breadcrum" class="aaog-breadcrum">
+            <p hidden="hidden" id="breadcrum">
+              Navegaci&oacute;n hasta esta p&aacute;gina
+            </p>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="pistolasyfusiles.html">Pistolas y Fusiles</a></li>
+              <li>
+                <a href="barnett.html" aria-current="page">Pistola Barnet</a>
+              </li>
+            </ul>
+          </nav>
+          <h1>Pistola Enfield (Barnett)</h1>
+          <p class="aaog-code">Código: PP002</p>
+          <ul id="product-gallery" class="aaog-image-gallery-wrapper">
+            <li>
+              <a
+                data-pswp-width="800"
+                data-pswp-height="600"
+                role="button"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett01.jpg"
+              >
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett01.jpg"
+                    alt="Pistola Barnett vista desde la platina"
+                  />
+                  <span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                data-pswp-width="800"
+                data-pswp-height="600"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett02.jpg"
+                role="button"
+              >
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett02.jpg"
+                    alt="Pistola Barnett vista desde la contraplatina"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure>
+              </a>
+            </li>
+            <li>
+              <a
+                data-pswp-width="800"
+                data-pswp-height="364"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett03.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett03.jpg"
+                    alt="Detalle del ca&ntilde;on"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+            <li>
+              <a
+                data-pswp-width="800"
+                data-pswp-height="600"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett04.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett04.jpg"
+                    alt="Vista lateral de la pistola sobre un lienzo"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+            <li>
+              <a
+                data-pswp-width="800"
+                data-pswp-height="600"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett05.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett05.jpg"
+                    alt="Detalle de la baqueta basculante"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+            <li>
+              <a
+                data-pswp-width="800"
+                data-pswp-height="600"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett06.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/barnett06.jpg"
+                    alt="Comparación pistola Enfield original y nuestra r&eacute;plica"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+            <li>
+              <a
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_141859.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_141859.jpg"
+                    alt="Pistola Enfield sobre lienzo con inscripci&oacute;n en la platina"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+            <li>
+              <a
+                data-pswp-width="4640"
+                data-pswp-height="2786"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_141952.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_141952.jpg"
+                    alt="Pistola Enfield vista desde la contraplatina"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+            <li>
+              <a
+                data-pswp-width="4640"
+                data-pswp-height="2786"
+                href="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_142248.jpg"
+                role="button"
+                ><figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolabarnett/IMG_20201224_142248.jpg"
+                    alt="Pistola Enfield empu&ntilde;ada"
+                  /><span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure></a
+              >
+            </li>
+          </ul>
+          <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+          '/compartir.html') %>
+          <div class="aaog-product-data-divider">
+            <section
+              class="aaog-product-description"
+              aria-labelledby="description"
+            >
+              <h2 id="description">Descripci&oacute;n</h2>
+              <p>
+                Fabricada por muchas empresas, una de las m&aacute;s
+                prestigiosas fue la Barnett de Londres.
+              </p>
+              <p>
+                Se us&oacute; en la marina y en la caballer&iacute;a. El modelo
+                que se reproduce, estuvo al servicio del Imperio del Brasil en
+                la guerra del Paraguay (1865-70).
+              </p>
+              <p>
+                Si uno busca este modelo de pistola en los cat&aacute;logos de
+                la armer&iacute;a real no la va a encontrar o la va a encontrar
+                en un apartado donde se menciona que perteneci&oacute; a las
+                Indias occidentales ya que los ingleses ten&iacute;an por
+                costumbre fabricar armas de acuerdo al lugar donde iban a
+                ejercer su dominio. Tanto es as&iacute; que tuvo una
+                versi&oacute;n de las Indias orientales muy parecida pero
+                diferenci&aacute;ndose de &eacute;sta en que el pomo o remate es
+                plano y posee una argolla fija dando la impresi&oacute;n de ser
+                una pistola m&aacute;s corta.
+              </p>
+            </section>
+            <section class="aaog-product-data" aria-labelledby="data">
+              <h2 id="data">Caracter&iacute;sticas</h2>
+              <table class="aaog-product-table">
+                <caption>
+                  Pistola Enfield (Barnett)
+                </caption>
+                <tr>
+                  <th scope="row">Ca&ntilde;on:</th>
+                  <td>
+                    de acero, exterior, c&oacute;nico, interior liso (como su
+                    original)
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Calibre:</th>
+                  <td>.58</td>
+                </tr>
+                <tr>
+                  <th scope="row">Llave:</th>
+                  <td>de percusi&oacute;n delantera</td>
+                </tr>
+                <tr>
+                  <th scope="row">Cure&ntilde;a:</th>
+                  <td>de nogal</td>
+                </tr>
+                <tr>
+                  <th scope="row">Guarniciones:</th>
+                  <td>de lat&oacute;n pulido</td>
+                </tr>
+                <tr>
+                  <th scope="row">Baqueta:</th>
+                  <td>basculante</td>
+                </tr>
+                <tr>
+                  <th scope="row">Peso:</th>
+                  <td>1350 gramos aproximadamente</td>
+                </tr>
+              </table>
+            </section>
+          </div>
+          <div class="aaog-btn-wrapper">
+            <button type="button" class="aaog-btn">Consultar</button>
+          </div>
+          <div
+            role="dialog"
+            aria-modal="true"
+            hidden
+            class="aaog-modal"
+            tabindex="-1"
+            aria-describedby="modalTitle"
+          >
+            <form action=""></form>
+          </div>
+        </article>
+      </main>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/footer.html') %>
+    </div>
+  </body>
 </html>
