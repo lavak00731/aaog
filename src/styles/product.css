@@ -73,7 +73,7 @@
     width: 110%;
     height: auto;
 }
-
+.aaog-image-gallery-wrapper li a:hover,
 .aaog-image-gallery-wrapper li a:focus-visible {
     outline: 0.25rem solid var(--interactive-color);
     outline-offset: 0.125rem;
