@@ -94,6 +94,7 @@ table :where(th, td) {
     border-bottom: var(--border-width) solid var(--dark-bg);
     padding: 0.35rem;
     text-align: left;
+    vertical-align: baseline;
 }
 table tr:nth-child(odd) {
     background-color: var(--dark-bg);
