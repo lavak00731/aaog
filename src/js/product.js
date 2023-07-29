@@ -4,9 +4,10 @@ import "./../styles/styles.css";
 import "./../styles/contact.css";
 import "./../styles/product.css";
 import { Shared } from "./shared";
+import { shareProduct } from './shareProduct';
 Shared();
+shareProduct();
 if(document.querySelector('html[lang="es"]')) {
-  console.log('entró')
     const lightbox = new PhotoSwipeLightbox({
       gallery: '#product-gallery',
       children: 'a',
