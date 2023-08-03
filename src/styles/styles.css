@@ -251,7 +251,7 @@
         width: auto;
       }
     }    
-    button:focus-visible, input[type="submit"]:focus-visible,
+    button:focus, button:focus-visible, input[type="submit"]:focus-visible,
     button:hover, input[type="submit"]:hover,
     .aaog-btn:focus-visible,
     .aaog-btn:hover {

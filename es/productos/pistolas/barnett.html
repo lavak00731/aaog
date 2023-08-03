@@ -29,8 +29,7 @@
               </li>
             </ul>
           </nav>
-          <h1>Pistola Enfield (Barnett)</h1>
-          <p class="aaog-code">Código: PP002</p>
+          <h1>Pistola Enfield (Barnett) <span class="aaog-code">Código: PP002</span></h1>
           <ul id="product-gallery" class="aaog-image-gallery-wrapper">
             <li>
               <a
@@ -260,18 +259,10 @@
             </section>
           </div>
           <div class="aaog-btn-wrapper">
-            <button type="button" class="aaog-btn">Consultar</button>
+            <button type="button" class="aaog-btn aaog-modal-trigger">Consultar</button>
           </div>
-          <div
-            role="dialog"
-            aria-modal="true"
-            hidden
-            class="aaog-modal"
-            tabindex="-1"
-            aria-describedby="modalTitle"
-          >
-            <form action=""></form>
-          </div>
+          <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/modal.html') %>          
         </article>
       </main>
       <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +

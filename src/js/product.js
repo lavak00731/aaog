@@ -5,6 +5,7 @@ import "./../styles/contact.css";
 import "./../styles/product.css";
 import { Shared } from "./shared";
 import { shareProduct } from './shareProduct';
+import { modal } from './modal';
 Shared();
 shareProduct();
 if(document.querySelector('html[lang="es"]')) {
@@ -28,3 +29,18 @@ if(document.querySelector('html[lang="es"]')) {
     });
     lightbox.init();
 }
+(function(){
+  const modalFunc = modal();
+  const btnTrigger = document.querySelectorAll('.aaog-modal-trigger');
+  const btnClose = document.querySelectorAll('.aaog-close-modal')
+  btnTrigger.forEach(( btn )=>{
+    btn.addEventListener('click', function(){
+      modalFunc.openModal('#prodId', btn)
+    }, false);
+  });
+  btnClose.forEach(( btn )=>{
+    btn.addEventListener('click', function(){
+      modalFunc.closeModal('#prodId')
+    }, false);
+  });
+})()
