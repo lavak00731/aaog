@@ -32,15 +32,19 @@ if(document.querySelector('html[lang="es"]')) {
 (function(){
   const modalFunc = modal();
   const btnTrigger = document.querySelectorAll('.aaog-modal-trigger');
-  const btnClose = document.querySelectorAll('.aaog-close-modal')
+  const btnClose = document.querySelectorAll('.aaog-close-modal');
+  const formElem = document.querySelector('form');
+  const heading = document.querySelector('h1').textContent
   btnTrigger.forEach(( btn )=>{
     btn.addEventListener('click', function(){
       modalFunc.openModal('#prodId', btn)
+      formElem.querySelector('#asunto').value = heading;
     }, false);
   });
   btnClose.forEach(( btn )=>{
     btn.addEventListener('click', function(){
-      modalFunc.closeModal('#prodId')
+      modalFunc.closeModal('#prodId');
+      formElem.reset()
     }, false);
   });
 })()
