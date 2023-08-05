@@ -1,9 +1,15 @@
 export const shareProduct = () => {
     const buildUrl = (url, links) => {
         links.forEach(element => {
-            let anchorUrl = element.href;
-            let urlEncoded = encodeURIComponent(url);
-            element.href = anchorUrl + urlEncoded;
+            const anchorUrl = element.href;
+            const urlEncoded = encodeURIComponent(url);            
+            if(!element.classList.contains('aaog-share-email')) {
+                element.href = anchorUrl + urlEncoded;
+            } else {
+                const subjectText = document.querySelector('h1').textContent
+                element.href = anchorUrl + `subject=${subjectText}`+"&amp;body="+`${url}`;
+            }
+
         });
     }
     const productLoc = location;
