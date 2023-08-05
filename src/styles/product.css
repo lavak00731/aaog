@@ -48,6 +48,7 @@
     display: inline-block;
     letter-spacing: 0.25rem;
     text-shadow:  var(--black-color) 0.125rem 0.2rem;
+    line-height: 1.9;
 }
 .aaog-image-gallery-wrapper{
     list-style: none;
