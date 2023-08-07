@@ -1,0 +1,42 @@
+{
+    "en": {
+        "validation": {
+            "nombre": [
+                {"type":"required",
+                "msg":"This field is required"}
+            ],            
+            "email": [
+                {"type":"required",
+                "msg":"This field is required"},
+                {"type":"typemismatch",
+                "msg":"Please provide a valid email address"}                  
+            ],           
+            "comentario": [
+                {"type":"required",
+                "msg": "This field is required"}
+            ]
+        },
+        "sending": "Sending Form...",
+        "textcount": "{variable} characters left"       
+    },
+    "es": {
+        "validation": {
+            "nombre": [
+                {"type":"required",
+                "msg":"Este campo es requerido"}
+            ],            
+            "email": [
+                {"type":"required",
+                "msg":"Este campo es requerido"},
+                {"type":"typemismatch",
+                "msg":"Una direcci&oacute;n de email v&aacute;lida es requerida."}                  
+            ],           
+            "comentario": [
+                {"type":"required",
+                "msg": "Este campo es requerido"}
+            ]
+        },
+        "sending": "Enviando...",
+        "textcount": "{variable} caracteres restantes"       
+    }
+}

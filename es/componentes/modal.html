@@ -11,7 +11,11 @@
     <button type="button" class="aaog-close-modal">
       <span class="aaog-visuallyhidden">Cerrar</span>
     </button>
-    <form action="">
+    <form id="prodForm" action="">
+      <div role="alert" tabIndex="-1" hidden>
+        <span aria-hidden="true" class="error-icon"></span>
+        Por favor revisar los campos con error
+      </div>
       <fieldset>
         <legend id="modalTitle">Consulta sobre el producto</legend>
         <div class="aaog-input-wrapper">
@@ -27,7 +31,7 @@
         <div class="aaog-input-wrapper">
           <label for="email">Email</label>
           <input
-            type="text"
+            type="email"
             name="email"
             id="email"
             aria-invalid="false"
@@ -54,5 +58,28 @@
         </div>
       </fieldset>
     </form>
+    <div id="aaog-form-success" class="aaog-overflow-hidden" hidden>
+      <h2 id="success-title">Gracias por ponerse en contacto!</h2>
+      <figure class="aaog-img-left">
+        <img src="src/imagenes/recibido.jpg" alt="Sello Rojo de Recibido" />
+      </figure>
+      <p>En breve estaremos respondi&eacute;ndole</p>
+      <div class="aaog-input-wrapper">
+        <button type="button" class="aaog-btn aaog-final-btn">Cerrar Modal</button>
+      </div>
+    </div>
+    <div id="aaog-form-error" class="aaog-overflow-hidden" hidden>
+      <h2 id="error-title">Lamentablemente el formulario no se envi&oacute;</h2>
+      <figure>
+        <img
+          src="src/imagenes/error.jpg"
+          alt="Bola de Ca&ntilde;&oacute;n metida en una pared"
+        />
+      </figure>
+      <p>Por favor, pruebe de nuevo en unos minutos</p>
+      <div class="aaog-input-wrapper">
+        <button type="button" class="aaog-btn aaog-final-btn">Cerrar Modal</button>
+      </div>
+    </div>
   </div>
 </div>
