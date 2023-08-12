@@ -1,66 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Armas Antiguas Osvaldo Gatto - Contact</title>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/favicon.html') %>
-</head>
-<body>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/fontfiles.html') %> <%=
+    require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/favicon.html') %>
+  </head>
+  <body>
     <a href="#main" class="aaog-skip-link">Ir al contenido</a>
-    <div class="aaog-gral-wrapper">  
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/headereng.html') %>
-    <main id="main">
+    <div class="aaog-gral-wrapper">
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/headereng.html') %>
+      <main id="main">
         <h1>Contact</h1>
         <article class="aaog-contact">
-            <form action="">
-                <div class="aaog-input-wrapper">
-                    <label for="nombre">Name</label>
-                    <input type="text" name="nombre" id="nombre" aria-invalid="false" required>
-                </div>
-                <div class="aaog-input-wrapper">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" aria-invalid="false" required>
-                </div>
-                <div class="aaog-input-wrapper">
-                    <label for="asunto">Subject (optional)</label>
-                    <input type="text" name="asunto" id="asunto">
-                </div>
-                <div class="aaog-input-wrapper">
-                    <label for="comentario">Comments</label>
-                    <textarea name="comentario" id="comentario" cols="30" rows="10" aria-invalid="false" required></textarea>
-                </div>
-                <div class="aaog-input-wrapper">
-                    <button type="submit" class="aaog-btn">Send</button>
-                </div>  
-            </form>
-            <address class="aaog-contact-info">
-                <p><strong>City: </strong>Rosario - ZipCode (S2001AFH) - Santa Fe - Argentina</p>
-                <p><strong>Telephone: </strong><a href="tel:+543417773379">(+54) 341 777-3379</a></p>
-                <p><strong>e-mail: </strong>avancarga@osvaldogatto.com.ar</p>  
-            </address>            
+          <form id="contactForm" action="">
+            <div role="alert" tabindex="-1" hidden>
+              <span aria-hidden="true" class="error-icon"></span>
+              Please review the fields with error
+            </div>
+            <div class="aaog-input-wrapper">
+              <label for="nombre">Name</label>
+              <input
+                type="text"
+                name="nombre"
+                id="nombre"
+                aria-invalid="false"
+                required
+              />
+            </div>
+            <div class="aaog-input-wrapper">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                aria-invalid="false"
+                required
+              />
+            </div>
+            <div class="aaog-input-wrapper">
+              <label for="asunto">Subject (optional)</label>
+              <input type="text" name="asunto" id="asunto" />
+            </div>
+            <div class="aaog-input-wrapper">
+              <label for="comentario">Comments</label>
+              <textarea
+                name="comentario"
+                id="comentario"
+                cols="30"
+                rows="10"
+                aria-invalid="false"
+                required
+              ></textarea>
+            </div>
+            <div class="aaog-input-wrapper">
+              <button type="submit" class="aaog-btn">Send</button>
+            </div>
+          </form>
+          <address class="aaog-contact-info">
+            <p>
+              <strong>City: </strong>Rosario - ZipCode (S2001AFH) - Santa Fe -
+              Argentina
+            </p>
+            <p>
+              <strong>Telephone: </strong
+              ><a href="tel:+543417773379">(+54) 341 777-3379</a>
+            </p>
+            <p><strong>e-mail: </strong>avancarga@osvaldogatto.com.ar</p>
+          </address>
         </article>
-        
+
         <div id="aaog-form-success" class="aaog-overflow-hidden" hidden>
-            <h2 id="success-title">Thanks for gettting in touch with us!</h2>
-            <figure class="aaog-img-left"><img src="src/imagenes/received.jpg" alt="Red Recieved Stamp"></figure>
-            <p>As soon as possible we are going to reply you.</p>
-            <div class="aaog-input-wrapper">
-                <button type="button" class="aaog-btn">Back to form</button>
-            </div>
+          <h2 id="success-title">Thanks for gettting in touch with us!</h2>
+          <figure class="aaog-img-left">
+            <img src="src/imagenes/received.jpg" alt="Red Recieved Stamp" />
+          </figure>
+          <p>As soon as possible we are going to reply you.</p>
+          <div class="aaog-input-wrapper">
+            <button type="button" class="aaog-btn">Back to form</button>
+          </div>
         </div>
-        <div id="aaog-form-error"  class="aaog-overflow-hidden" hidden>
-            <h2 id="error-title">Unfortunately, something went wrong.</h2>
-            <figure class="aaog-img-left"><img src="src/imagenes/error.jpg" alt="Cannon ball embeded in wall"></figure>
-            <p>Please try again in couple of minutes.</p>
-            <div class="aaog-input-wrapper">
-                <button type="button" class="aaog-btn">Back to form</button>
-            </div>
+        <div id="aaog-form-error" class="aaog-overflow-hidden" hidden>
+          <h2 id="error-title">Unfortunately, something went wrong.</h2>
+          <figure class="aaog-img-left">
+            <img
+              src="src/imagenes/error.jpg"
+              alt="Cannon ball embeded in wall"
+            />
+          </figure>
+          <p>Please try again in couple of minutes.</p>
+          <div class="aaog-input-wrapper">
+            <button type="button" class="aaog-btn">Back to form</button>
+          </div>
         </div>
-    </main>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footereng.html') %>
-</div>
-</body>
+      </main>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/footereng.html') %>
+    </div>
+  </body>
 </html>

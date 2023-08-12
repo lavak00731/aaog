@@ -60,7 +60,10 @@ input[aria-invalid="true"], textarea[aria-invalid="true"] {
 .loadingWrapper figure {
     width: 33.3333333%;
     position: relative;
-
+}
+.loadingWrapper figure img {
+    display: block;
+    margin: 0 auto;
 }
 .loadingWrapper figure + p {
     background: var(--white-color);
