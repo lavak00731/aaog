@@ -21,12 +21,14 @@ export const modal = () => {
         const modalElem = document.querySelector(target);
         modalElem.removeAttribute('hidden');
         modalElem.focus();
+        document.querySelector('body').classList.add('aaog-overhidden');
         focusTrap(modalElem);
     }
     const closeModal = (target) => {
         isAlreadeOpened = false;
         const modalElem = document.querySelector(target);
         modalElem.setAttribute('hidden', true);
+        document.querySelector('body').classList.remove('aaog-overhidden');
         triggerElem.focus();
     }
     document.addEventListener('keyup', (e) =>{

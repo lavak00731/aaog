@@ -154,6 +154,9 @@
     .aaog-text-center {
       text-align: center;
     }
+    .aaog-overhidden {
+      overflow: hidden;
+    }
     [hidden] {
       display: none!important;
     }
