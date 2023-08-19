@@ -3,13 +3,14 @@ import 'photoswipe/style.css';
 import "./../styles/styles.css";
 import "./../styles/contact.css";
 import "./../styles/product.css";
+import "./../styles/print.css";
 import { ValidAccess } from './validAccess';
 import { Shared } from "./shared";
 import { shareProduct } from './shareProduct';
 import errorMsg from './../errorMsg.json';
 import { modal } from './modal';
 import img from './../imagenes/loadingsmall.gif';
-
+import QRCode from 'qrcode';
 Shared();
 shareProduct();
 
@@ -73,5 +74,19 @@ if(document.querySelector('html[lang="es"]')) {
       bannerClass: 'aaog-alert-banner',
       fieldError: 'aaog-error',
       loadingImg: img
+   });
+   const opts = {
+    errorCorrectionLevel: 'H',
+    type: 'image/jpeg',
+    quality: 0.3,
+    margin: 1,
+    color: {
+      dark:"#000000",
+      light:"#FFFFFF"
+    }
+  }
+   QRCode.toDataURL(window.location.href, opts, function (err, url) {
+     const target = document.querySelector('#qr');
+     target.src = url;
    })
 })();

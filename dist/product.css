@@ -1367,7 +1367,7 @@ table tr {
         position: fixed;
         right: 25%;
         padding: 2rem 1rem 1rem;
-        min-height: 80lvh;
+        max-height: 80lvh;
         overflow-y: scroll;
         overflow-x: hidden;
     }

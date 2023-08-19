@@ -1,4 +1,7 @@
 /* Product Page */
+.aaog-qr-wrapper {
+    display: none;
+}
 .aaog-breadcrum {
     width: 100%;
     border-radius:  var(--border-radius);

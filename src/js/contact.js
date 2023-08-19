@@ -15,5 +15,5 @@ Shared();
        bannerClass: 'aaog-alert-banner',
        fieldError: 'aaog-error',
        loadingImg: img
-    })
+    });   
  })();

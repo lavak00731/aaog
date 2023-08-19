@@ -38,6 +38,7 @@
     "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "photoswipe": "^5.3.4"
+    "photoswipe": "^5.3.4",
+    "qrcode": "^1.5.3"
   }
 }
