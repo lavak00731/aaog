@@ -76,7 +76,7 @@ const config = {
       template: "./es/contacto.html",
       filename: "contacto.html",
       filePath: folderPathEs,
-      removeRedundantAttributes: false,
+      minify: false,
       chunks: ['contact'],
       inject: 'body'
     }),
@@ -84,7 +84,7 @@ const config = {
       template: "./en/contactoeng.html",
       filename: "contactoeng.html",
       filePath: folderPathEn,
-      removeRedundantAttributes: false,
+      minify: false,
       chunks: ['contact'],
       inject: 'body'
     }),
@@ -135,7 +135,7 @@ const config = {
       template: "./es/productos/pistolas/barnett.html",
       filename: "barnett.html",
       filePath: folderPathEs,
-      removeRedundantAttributes: false,
+      minify: false,
       chunks: ['product'],
       inject: 'body'
     }),
