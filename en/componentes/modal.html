@@ -1,0 +1,85 @@
+<div
+  role="dialog"
+  aria-modal="true"
+  hidden
+  class="aaog-modal"
+  tabindex="-1"
+  id="prodId"
+  aria-describedby="modalTitle"
+>
+  <div class="aaog-modal-body">
+    <button type="button" class="aaog-close-modal">
+      <span class="aaog-visuallyhidden">Close</span>
+    </button>
+    <form id="prodForm" action="">
+      <div role="alert" tabIndex="-1" hidden>
+        <span aria-hidden="true" class="error-icon"></span>
+        Please look over fields with error
+      </div>
+      <fieldset>
+        <legend id="modalTitle">Ask a quotation for this product:</legend>
+        <div class="aaog-input-wrapper">
+          <label for="nombre">Name</label>
+          <input
+            type="text"
+            name="nombre"
+            id="nombre"
+            aria-invalid="false"
+            required            
+          />
+        </div>
+        <div class="aaog-input-wrapper">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            aria-invalid="false"
+            required
+          />
+        </div>
+        <div class="aaog-input-wrapper">
+          <label for="asunto">Subject (optional)</label>
+          <input type="text" name="asunto" id="asunto" />
+        </div>
+        <div class="aaog-input-wrapper">
+          <label for="comentario">Comments</label>
+          <textarea
+            name="comentario"
+            id="comentario"
+            cols="5"
+            rows="5"
+            aria-invalid="false"
+            required
+          ></textarea>
+        </div>
+        <div class="aaog-input-wrapper">
+          <button type="submit" class="aaog-btn">Submit</button>
+        </div>
+      </fieldset>
+    </form>
+    <div id="aaog-form-success" class="aaog-overflow-hidden" hidden>
+      <h2 id="success-title">Thanks for gettting in touch with us!</h2>
+      <figure class="aaog-img-left">
+        <img src="src/imagenes/received.jpg" alt="Red Recieved Stamp" />
+      </figure>
+      <p>As soon as possible we are going to reply you.</p>
+      <div class="aaog-input-wrapper">
+        <button type="button" class="aaog-btn">Back to form</button>
+      </div>
+    </div>
+    <div id="aaog-form-error" class="aaog-overflow-hidden" hidden>
+      <h2 id="error-title">Unfortunately, something went wrong.</h2>
+      <figure class="aaog-img-left">
+        <img
+          src="src/imagenes/error.jpg"
+          alt="Cannon ball embeded in wall"
+        />
+      </figure>
+      <p>Please try again in couple of minutes.</p>
+      <div class="aaog-input-wrapper">
+        <button type="button" class="aaog-btn">Back to form</button>
+      </div>
+    </div>
+  </div>
+</div>

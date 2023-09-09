@@ -139,6 +139,14 @@ const config = {
       chunks: ['product'],
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      template: "./en/productos/pistolas/barnetteng.html",
+      filename: "barnetteng.html",
+      filePath: folderPathEn,
+      minify: false,
+      chunks: ['product'],
+      inject: 'body'
+    }),
     new MiniCssExtractPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
