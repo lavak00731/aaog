@@ -662,6 +662,19 @@ div.pswp__img--placeholder,
       display: block;
       text-align: center;
       text-decoration: none;
+      margin-bottom: 1rem;
+    }
+    .aaog-btn-secondary {
+      color: var(--interactive-color);
+      background-color: var(--white-color);
+      padding: 1rem;
+      border-radius: var(--border-radius);
+      font-weight: 700;
+      border: var(--border-width) solid var(--interactive-color);
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      margin-bottom: 1rem;
     }
     .aaog-btn svg {
       width: 3rem;
@@ -670,7 +683,7 @@ div.pswp__img--placeholder,
       margin-right: 0.5rem;
     }
     @media (min-width: 768px) {
-      .aaog-input-wrapper .aaog-btn, button, input[type="submit"], .aaog-btn {
+      .aaog-input-wrapper .aaog-btn, button, input[type="submit"], .aaog-btn, .aaog-input-wrapper .aaog-btn-secondary {
         display: inline-block;
         width: auto;
       }
@@ -681,6 +694,12 @@ div.pswp__img--placeholder,
     .aaog-btn:hover {
       color: var(--interactive-color);
       background-color: var(--white-color);
+      border-color: var(--interactive-color);
+    }
+    .aaog-btn-secondary:hover,
+    .aaog-btn-secondary:focus-visible {
+      color: var(--white-color);
+      background-color: var(--interactive-color);
       border-color: var(--interactive-color);
     }
     .aaog-separator {
