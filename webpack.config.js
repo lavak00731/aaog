@@ -179,6 +179,22 @@ const config = {
       chunks: ['product'],
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      template: "./es/productos/fusiles/mosquetemecha.html",
+      filename: "mosquetemecha.html",
+      filePath: folderPathEs,
+      minify: false,
+      chunks: ['product'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./en/productos/fusiles/mosquetemechaeng.html",
+      filename: "mosquetemechaeng.html",
+      filePath: folderPathEn,
+      minify: false,
+      chunks: ['product'],
+      inject: 'body'
+    }),
     new MiniCssExtractPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/
