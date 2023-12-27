@@ -9,7 +9,17 @@ addFilterByFeature('pistolsandrifles')
 const productList = document.querySelectorAll('.aaog-product-wrapper');
 const featureTrigger = document.querySelectorAll('input[type="radio"]');
 const resetTrigger = document.querySelector('#resetTrigger');
-resetTrigger.addEventListener('click', () => resetFilterByFeature(productList), false);
+const filter = document.querySelector('#filterTrigger');
+let filterValue;
+resetTrigger.addEventListener('click', () => {
+    resetFilterByFeature(productList);
+    filterValue = null;
+}, false);
 featureTrigger.forEach((feature)=>{
-    feature.addEventListener('change', (e)=> filterByFeature(e.target.value, productList), false)
+    feature.addEventListener('change', (e)=> filterValue = e.target.value, false)
 });
+filter.addEventListener('click', () => {
+    if(filterValue) {
+        filterByFeature(filterValue, productList)
+    }
+}, false)

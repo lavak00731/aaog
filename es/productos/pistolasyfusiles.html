@@ -15,15 +15,7 @@
     <main id="main">
         <article>
             <h1>Productos - Pistolas y Fusiles</h1>
-            <div id="filters" class="aaog-filter-trigger">                
-                <fieldset>
-                    <legend>Existen cuatro sistemas de ignici&oacute;n que nosotros fabricamos:</legend>
-                    <div id="options"></div>
-                </fieldset>                
-                <div class="aaog-input-wrapper aaog-text-center">
-                    <button class="aaog-btn" type="button" id="resetTrigger">Limpiar Filtro</button>
-                </div>              
-            </div>
+            <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/filtro.html') %>
             <p id="productQuatity" aria-live="polite"></p>            
             <ul class="aaog-products-container">
                 <li class="aaog-product-wrapper" data-feature="matchlock">                    
