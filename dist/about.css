@@ -680,7 +680,6 @@ div.pswp__img--placeholder,
       width: 3rem;
       display: inline-block;
       vertical-align: middle;
-      margin-right: 0.5rem;
     }
     @media (min-width: 768px) {
       .aaog-input-wrapper .aaog-btn, button, input[type="submit"], .aaog-btn, .aaog-input-wrapper .aaog-btn-secondary {
@@ -748,18 +747,22 @@ div.pswp__img--placeholder,
       margin-bottom: 1rem;
     }
     .aaog-menu-opener svg {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      right: 1rem;
+      display: block;
+      margin: 0 auto;
+      max-height: 24px;
+    }
+    @media (min-width: 360px) {
+      .aaog-menu-opener svg {
+        display: inline-block;
+        vertical-align: text-bottom;
+      }
     }
     .aaog-menu-opener svg > rect {
       fill: var(--white-color);
     }
     .aaog-menu-opener:focus-visible svg > rect,
     .aaog-menu-opener:focus svg > rect,
-    .aaog-menu-opener:hover svg > rect,
-    .aaog-menu-opener[aria-expanded="true"] svg > rect {
+    .aaog-menu-opener:hover svg > rect {
       fill: var(--interactive-color);
     }
     .aaog-menu-opener[aria-expanded="true"] .middle {
