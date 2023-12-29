@@ -205,7 +205,7 @@ const config = {
     }),
     new HtmlWebpackPlugin({
       template: "./en/productos/pistolas/ruedaeng.html",
-      filename: "rueda.htmleng.html",
+      filename: "ruedaeng.html",
       filePath: folderPathEn,
       minify: false,
       chunks: ['product'],
