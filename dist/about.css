@@ -749,7 +749,6 @@ div.pswp__img--placeholder,
     .aaog-menu-opener svg {
       display: block;
       margin: 0 auto;
-      max-height: 24px;
     }
     @media (min-width: 360px) {
       .aaog-menu-opener svg {
