@@ -7,7 +7,7 @@ export const shareProduct = () => {
                 element.href = anchorUrl + urlEncoded;
             } else {
                 const subjectText = document.querySelector('h1').textContent
-                element.href = anchorUrl + `subject=${subjectText}`+"&amp;body="+`${url}`;
+                element.href = anchorUrl + `subject=${subjectText}`+"&body="+`${url}`;
             }
 
         });
