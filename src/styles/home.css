@@ -44,7 +44,18 @@
  }
  @media (min-width: 768px) {
   :is(a.aaog-img-replica, a.aaog-img-original) {
-    padding: 3rem 2rem;
+    padding: 3rem 2rem;    
+   }
+   :is(a.aaog-img-replica span, a.aaog-img-original span) {
+    padding: 1rem;
+   }
+ }
+ @media (min-width: 1200px) {
+  :is(a.aaog-img-replica, a.aaog-img-original) {
+    padding: 5rem 4rem;
+   }
+   :is(a.aaog-img-replica span, a.aaog-img-original span) {
+    padding: 2rem;
    }
  }
  .aaog-img-replica {
