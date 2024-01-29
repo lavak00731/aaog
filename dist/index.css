@@ -1,3 +1,6 @@
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
+  \*************************************************************************/
 /* Reset */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -668,6 +671,9 @@ footer h2 {
   }
 
 
+/*!***********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/home.css ***!
+  \***********************************************************************/
  /* main sections */
  .aaog-main-section,
  .aaog-news-container {
@@ -759,6 +765,9 @@ footer h2 {
   }
  }
  
+/*!***************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/products.css ***!
+  \***************************************************************************/
  /* Productos Home */
  .aaog-product-wrapper {
     padding: 1rem 1rem 2rem;

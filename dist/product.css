@@ -1,3 +1,6 @@
+/*!***********************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/photoswipe/dist/photoswipe.css ***!
+  \***********************************************************************************************/
 /*! PhotoSwipe main CSS by Dmytro Semenov | photoswipe.com */
 
 .pswp {
@@ -418,6 +421,9 @@ div.pswp__img--placeholder,
   display: none;
 }
 
+/*!*************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/styles.css ***!
+  \*************************************************************************/
 /* Reset */
 /*
   1. Use a more-intuitive box-sizing model.
@@ -1088,6 +1094,9 @@ footer h2 {
   }
 
 
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/contact.css ***!
+  \**************************************************************************/
 label, legend {
     font-weight: 700;
     margin-bottom: 0.5rem;
@@ -1176,6 +1185,9 @@ input[aria-invalid="true"], textarea[aria-invalid="true"] {
         display: block;
     }
 }
+/*!**************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/product.css ***!
+  \**************************************************************************/
 /* Product Page */
 .aaog-qr-wrapper {
     display: none;
@@ -1400,6 +1412,9 @@ table tr {
         padding: 0;
     }
 }
+/*!************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/styles/print.css ***!
+  \************************************************************************/
 @media print {
     @page {
         size: a4;

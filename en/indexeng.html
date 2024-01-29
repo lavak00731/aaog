@@ -1,124 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home - Armas Antiguas Osvaldo Gatto</title>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/fontfiles.html') %>
-    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/favicon.html') %>
-</head>
-<body>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/fontfiles.html') %> <%=
+    require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/favicon.html') %>
+  </head>
+  <body>
     <a href="#main" class="aaog-skip-link">Jump to main content</a>
-    <div class="aaog-gral-wrapper">        
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/headereng.html') %>
-        <main id="main">
-            <article>
-                <h1>Welcome to Armas Antiguas Osvaldo Gatto</h1>
-                <p>We are a small Italian family dynasty of traditional gunsmith located in Argentina, offering the best standards and quality control for our products, under the strictest international manufacturing methods.  
-                    It is our goal to guarante safety, durability and fun to all our selected clients.</p>
-                <p>All the pieces, you are going to watch in this site, are fully handmade. All these items are muzzleloading firearms completely functional, they are capable of shooting
-                     lead ammunition using black powder. We invite you to sail our site and meet <a href="#productos">our wide range of products.</a></p>                
+    <div class="aaog-gral-wrapper">
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/headereng.html') %>
+      <main id="main">
+        <article>
+          <h1>Welcome to Armas Antiguas Osvaldo Gatto</h1>
+          <p>
+            We are a small Italian family dynasty of traditional gunsmith
+            located in Argentina, offering the best standards and quality
+            control for our products, under the strictest international
+            manufacturing methods. It is our goal to guarante safety, durability
+            and fun to all our selected clients.
+          </p>
+          <p>
+            All the pieces, you are going to watch in this site, are fully
+            handmade. All these items are muzzleloading firearms completely
+            functional, they are capable of shooting lead ammunition using black
+            powder. We invite you to sail our site and meet
+            <a href="#productos">our wide range of products.</a>
+          </p>
+          <p>
+            <span class="aaog-since-comp">
+              <span
+                ><script>
+                  document.write(new Date().getFullYear() - 1984);
+                </script></span
+              > </span
+            >years since we are a manufacturer company specialized on
+            muzzleloading weapons. We are the only one muzzlealoading functional
+            replicas manufacturer recognized and licensed in whole South
+            America.
+          </p>
+          <section class="aaog-main-section" aria-labelledby="products">
+            <h2 id="products">Catalogue</h2>
+            <ul class="aaog-split-choice">
+              <li>
+                <a href="#productos" class="aaog-btn aaog-img-replica"
+                  ><span
+                    >Check our replicas catalogue</span
+                  ></a
+                >
+              </li>
+            </ul>
+          </section>
+          <section class="aaog-main-section" aria-labelledby="novedades">
+            <h2 id="novedades">News</h2>
+            <ul class="aaog-news-wrapper">
+              <li class="aaog-news-container">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg"
+                    alt=""
+                  />
+                </figure>
+                <div class="aaog-news--text-wrapper">
+                  <h3><a href="">Lorem Ipsum</a></h3>
+                  <p class="new-date">Published: <strong>22/11/2006</strong></p>
+                </div>
+              </li>
+              <li class="aaog-news-container">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg"
+                    alt=""
+                  />
+                </figure>
+                <div class="aaog-news--text-wrapper">
+                  <h3><a href="">Lorem Ipsum</a></h3>
+                  <p class="new-date">Publicado: <strong>22/11/2006</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                    venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt.
+                  </p>
+                  <p>
+                    <a href=""
+                      >Read the article
+                      <span class="aaog-visuallyhidden">Lorem Ipsum</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="aaog-news-container">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg"
+                    alt=""
+                  />
+                </figure>
+                <div class="aaog-news--text-wrapper">
+                  <h3><a href="">Lorem Ipsum</a></h3>
+                  <p class="new-date">Published: <strong>22/11/2006</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                    venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt.
+                  </p>
+                  <p>
+                    <a href=""
+                      >Read the article
+                      <span class="aaog-visuallyhidden">Lorem Ipsum</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="aaog-news-container">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg"
+                    alt=""
+                  />
+                </figure>
+                <div class="aaog-news--text-wrapper">
+                  <h3><a href="">Lorem Ipsum</a></h3>
+                  <p class="new-date">Published: <strong>22/11/2006</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                    venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt.
+                  </p>
+                  <p>
+                    <a href=""
+                      >Read the article
+                      <span class="aaog-visuallyhidden">Lorem Ipsum</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+              <li class="aaog-news-container">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg"
+                    alt=""
+                  />
+                </figure>
+                <div class="aaog-news--text-wrapper">
+                  <h3><a href="">Lorem Ipsum</a></h3>
+                  <p class="new-date">Publicado: <strong>22/11/2006</strong></p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                    natoque penatibus et magnis dis parturient montes, nascetur
+                    ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+                    eu, pretium quis, sem. Nulla consequat massa quis enim.
+                    Donec pede justo, fringilla vel, aliquet nec, vulputate
+                    eget, arcu. In enim justo, rhoncus ut, imperdiet a,
+                    venenatis vitae, justo. Nullam dictum felis eu pede mollis
+                    pretium. Integer tincidunt.
+                  </p>
+                  <p>
+                    <a href=""
+                      >Leer Art&iacute;culo
+                      <span class="aaog-visuallyhidden">Lorem Ipsum</span></a
+                    >
+                  </p>
+                </div>
+              </li>
+            </ul>
+            <p class="aaog-text-center">
+              <a href="/novedades" class="aaog-btn">Get all the news</a>
+            </p>
+          </section>
+          <div class="aaog-separator"></div>
+          <section class="aaog-main-section" aria-labelledby="productos">
+            <h2 id="productos">Products</h2>
+            <p>We have a wide range of products.</p>
+            <div class="aaog-products-container">
+              <div class="aaog-product-wrapper">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/riflesypistolas.jpg"
+                    alt="A wide collection of pistols and rifles made by Armas Antiguas Osvaldo Gatto"
+                  />
+                </figure>
+                <h3>Pistols and Rifles</h3>
                 <p>
-                    <span class="aaog-since-comp">
-                        <span><script>document.write(new Date().getFullYear() - 1984)</script></span>
-                    </span>years since we are a manufacturer company specialized on muzzleloading weapons. We are the only one muzzlealoading functional replicas manufacturer recognized and licensed in whole South America.</p>
-                <section class="aaog-main-section" aria-labelledby="novedades">
-                    <h2 id="novedades">News</h2>
-                    <ul class="aaog-news-wrapper">
-                        <li class="aaog-news-container">
-                            <figure><img loading="lazy" src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg" alt=""></figure>
-                            <div class="aaog-news--text-wrapper">
-                                <h3><a href="">Lorem Ipsum</a></h3>
-                                <p class="new-date">Published: <strong>22/11/2006</strong></p>
-                            </div>                        
-                        </li>
-                        <li class="aaog-news-container">
-                            <figure><img loading="lazy" src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg" alt=""></figure>
-                            <div class="aaog-news--text-wrapper">
-                                <h3><a href="">Lorem Ipsum</a></h3>
-                                <p class="new-date">Publicado: <strong>22/11/2006</strong></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-                                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-                                <p><a href="">Read the article <span class="aaog-visuallyhidden">Lorem Ipsum</span></a></p>
-                            </div>                        
-                        </li>
-                        <li class="aaog-news-container">
-                            <figure><img loading="lazy" src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg" alt=""></figure>
-                            <div class="aaog-news--text-wrapper">
-                                <h3><a href="">Lorem Ipsum</a></h3>
-                                <p class="new-date">Published: <strong>22/11/2006</strong></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-                                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-                                <p><a href="">Read the article <span class="aaog-visuallyhidden">Lorem Ipsum</span></a></p>
-                            </div>                        
-                        </li>
-                        <li class="aaog-news-container">
-                            <figure><img loading="lazy" src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg" alt=""></figure>
-                            <div class="aaog-news--text-wrapper">
-                                <h3><a href="">Lorem Ipsum</a></h3>
-                                <p class="new-date">Published: <strong>22/11/2006</strong></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-                                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-                                <p><a href="">Read the article <span class="aaog-visuallyhidden">Lorem Ipsum</span></a></p>
-                            </div>                        
-                        </li>
-                        <li class="aaog-news-container">
-                            <figure><img loading="lazy" src="https://i1.wp.com/nnn.ng/wp-content/uploads/2021/03/bbc-news.jpg" alt=""></figure>
-                            <div class="aaog-news--text-wrapper">
-                                <h3><a href="">Lorem Ipsum</a></h3>
-                                <p class="new-date">Publicado: <strong>22/11/2006</strong></p>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
-                                    Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, 
-                                    pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, 
-                                    rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt.</p>
-                                <p><a href="">Leer Art&iacute;culo <span class="aaog-visuallyhidden">Lorem Ipsum</span></a></p>
-                            </div>                        
-                        </li>               
-                    </ul>
-                    <p class="aaog-text-center"><a href="/novedades" class="aaog-btn">Get all the news</a></p>                
-                </section>
-                <div class="aaog-separator"></div>
-                <section class="aaog-main-section" aria-labelledby="productos">
-                    <h2 id="productos">Products</h2>
-                    <p>We have a wide range of products.</p>
-                    <div class="aaog-products-container">
-                        <div class="aaog-product-wrapper">
-                            <figure>
-                                <img loading="lazy" src="src/imagenes/riflesypistolas.jpg" alt="A wide collection of pistols and rifles made by Armas Antiguas Osvaldo Gatto">
-                            </figure>
-                            <h3>Pistols and Rifles</h3>
-                            <p>Long, one-handed muzzleloaders, functional replicas (they shoot with black powder) of weapons which had forged History.</p>
-                            <p class="aaog-text-center"><a href="pistolasyfusileseng.html" class="aaog-btn">Go to Pistols and Rifles</a></p>
-                        </div>
-                        <div class="aaog-product-wrapper">
-                            <figure>
-                                <img loading="lazy" src="src/imagenes/productos/canones/canones.jpg" alt="Two brass field canons replicas">
-                            </figure>
-                            <h3>Artillery</h3>
-                            <p>We manufacture a wide range of field and naval cannons, also mortars, faithful and accurate replicas of weapons used by fleets and armies of great empires.
-                                All our artillery is capable of shooting lead ammunition using black powder.  </p>
-                            <p class="aaog-text-center"><a href="artilleriaeng.html" class="aaog-btn">Go to Artillery</a></p>
-                        </div>
-                        <div class="aaog-product-wrapper">
-                            <figure>
-                                <img loading="lazy" src="src/imagenes/productos/accesorios/ac001_imagen.jpg" alt="Powder Horn">
-                            </figure>
-                            <h3>Accesories</h3>
-                            <p>We put to your disposition a large variety of indispensable implements for the muzzle-loading shooting. Powder horns, charging ramrods, calepinos and all the ammunition caliber molds used by the weapons we make.</p>
-                            <p class="aaog-text-center"><a href="accesorioseng.html" class="aaog-btn">Go to Accesories</a></p>
-                        </div>
-                    </div>                
-                </section>
-            </article>        
-        </main>
-        <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath + '/footereng.html') %>
-    </div>   
-</body>
+                  Long, one-handed muzzleloaders, functional replicas (they
+                  shoot with black powder) of weapons which had forged History.
+                </p>
+                <p class="aaog-text-center">
+                  <a href="pistolasyfusileseng.html" class="aaog-btn"
+                    >Go to Pistols and Rifles</a
+                  >
+                </p>
+              </div>
+              <div class="aaog-product-wrapper">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/canones/canones.jpg"
+                    alt="Two brass field canons replicas"
+                  />
+                </figure>
+                <h3>Artillery</h3>
+                <p>
+                  We manufacture a wide range of field and naval cannons, also
+                  mortars, faithful and accurate replicas of weapons used by
+                  fleets and armies of great empires. All our artillery is
+                  capable of shooting lead ammunition using black powder.
+                </p>
+                <p class="aaog-text-center">
+                  <a href="artilleriaeng.html" class="aaog-btn"
+                    >Go to Artillery</a
+                  >
+                </p>
+              </div>
+              <div class="aaog-product-wrapper">
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/accesorios/ac001_imagen.jpg"
+                    alt="Powder Horn"
+                  />
+                </figure>
+                <h3>Accesories</h3>
+                <p>
+                  We put to your disposition a large variety of indispensable
+                  implements for the muzzle-loading shooting. Powder horns,
+                  charging ramrods, calepinos and all the ammunition caliber
+                  molds used by the weapons we make.
+                </p>
+                <p class="aaog-text-center">
+                  <a href="accesorioseng.html" class="aaog-btn"
+                    >Go to Accesories</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+        </article>
+      </main>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/footereng.html') %>
+    </div>
+  </body>
 </html>

@@ -7,6 +7,52 @@
   list-style: none;
   padding: 0;
  }
+ .aaog-split-choice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-items: flex-start;
+  align-items: stretch;
+  padding: 2rem 0;
+  list-style: none;
+ }
+ .aaog-split-choice li {
+  max-width: 47%;
+ }
+ :is(a.aaog-img-replica, a.aaog-img-original) {
+  background-color: var(--black-color);
+  background-blend-mode:luminosity;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 1rem;
+ }
+ :is(a.aaog-img-replica:hover, a.aaog-img-original:hover,
+ a.aaog-img-replica:focus-visible, a.aaog-img-original:focus-visible) {
+  background-blend-mode:normal;
+ }
+ :is(a.aaog-img-replica:hover span, a.aaog-img-original:hover span,
+ a.aaog-img-replica:focus-visible span, a.aaog-img-original:focus-visible span) {
+  background-color: rgba(255,255,255,0.75); 
+  color: var(--black-color);
+}
+ :is(a.aaog-img-replica span, a.aaog-img-original span) {
+  background-color: rgba(0,0,0,0.75);  
+  display: block;
+  padding: 0.25rem;
+  text-transform: capitalize;
+ }
+ @media (min-width: 768px) {
+  :is(a.aaog-img-replica, a.aaog-img-original) {
+    padding: 3rem 2rem;
+   }
+ }
+ .aaog-img-replica {
+  background-image: url('./../imagenes/riflesypistolas.jpg');  
+ }
+ .aaog-img-original {
+  background-image: url('./../imagenes/wallpaperflare.com_wallpaper.jpg');
+ }
  /* Home News Section */
  .new-date {
    margin-bottom: 1.5rem;
