@@ -117,7 +117,10 @@
       line-height: calc(1ex / 0.42);
       margin: 0.5rem 0 1rem;
     }
-    .aaog-news-wrapper .aaog-news-container:first-child h3 a {
+    .aaog-news-wrapper .aaog-news-container:first-child h3 a,
+    .aaog-news-wrapper .aaog-news-container:first-child a,
+    .aaog-news-wrapper .aaog-news-container:first-child h3 a:focus-visible,
+    .aaog-news-wrapper .aaog-news-container:first-child a:focus-visible  {
       color: var(--white-color);      
     }
     .aaog-news-wrapper .aaog-news-container:first-child .aaog-news--text-wrapper {
@@ -128,9 +131,9 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    .aaog-news-wrapper .aaog-news-container:focus-within .aaog-news--text-wrapper {
-      background-color: rgba(255,255,255, 80%);
-      color: var(--dark-bg);
+    .aaog-news-wrapper .aaog-news-container a:focus-visible {
+      background: var(--interactive-color);
+      color: var(--white-color);
     }
    }
    @media (min-width: 1200px) and (min-height: 950px) {
