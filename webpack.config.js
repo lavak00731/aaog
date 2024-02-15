@@ -4,6 +4,7 @@ const path = require("path");
 let fs = require('fs');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CssMinimizerPlugin = require("css-minimizer-webpack-plugin");
 const folderPathEs = path.resolve(__dirname, "es/componentes");
 const folderPathEn = path.resolve(__dirname, "en/componentes");
 const isProduction = process.env.NODE_ENV == "production";
@@ -264,6 +265,11 @@ const config = {
 
       // Add your rules for custom modules here
       // Learn more about loaders from https://webpack.js.org/loaders/
+    ],
+  },
+  optimization: {
+    minimizer: [
+     new CssMinimizerPlugin(),
     ],
   },
 };
