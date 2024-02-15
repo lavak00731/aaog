@@ -70,6 +70,9 @@
    font-weight: 700;
    font-style: italic;
  }
+ .aaog-news-wrapper {
+  padding-left: 0;
+ }
  @media (min-width: 1200px) {
    .aaog-news-wrapper {
      display: grid;
