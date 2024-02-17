@@ -16,22 +16,22 @@ const stylesHandler = isProduction
 const config = {
   entry: {
     index: {
-      import: "./src/js/index.js",
+      import: "./js/index.js",
     },
     about: {
-      import: "./src/js/about.js",
+      import: "./js/about.js",
     },  
     contact: {
-      import: "./src/js/contact.js",
+      import: "./js/contact.js",
     },
     pistolsLanding: {
-      import: "./src/js/pistolsLanding.js"
+      import: "./js/pistolsLanding.js"
     },
     artilleryLanding: {
-      import: "./src/js/artilleryLanding.js"
+      import: "./js/artilleryLanding.js"
     },
     product: {
-      import: "./src/js/product.js"
+      import: "./js/product.js"
     } 
   },
   output: {

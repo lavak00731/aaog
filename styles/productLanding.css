@@ -1,0 +1,143 @@
+:root {
+    --first-type: #005f7a;
+    --second-type: #6E0202;
+    --third-type: #1A3787;
+    --fourth-type: #C21325; 
+   }
+[data-feature] .aaog-ignition-type {
+    display: inline-block;
+    color: var(--white-color);
+    font-weight: 600;
+    padding: 0.3rem 0.7rem;
+}
+input[type="radio"]+label {
+    font-weight: 600;
+    padding: 0.3rem;
+    display: block;
+}
+[data-feature] .aaog-ignition-type::before,
+input[type="radio"]+label::before {
+    content: "";
+    display: block;
+    width: 3.4rem;
+    height: 3.4rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: middle;
+    margin: 0 auto;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+[data-feature] .aaog-ignition-type::before {
+    display: inline-block;
+    margin-right: 1rem;
+}
+@media (min-width: 600px ) {
+    input[type="radio"]+label::before {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+}
+input[type="radio"]+label::before {
+    border: 1px solid var(--black-color);
+}
+[data-feature="matchlock"] .aaog-ignition-type,
+[data-feature="field"]  .aaog-ignition-type {
+    background-color: var(--first-type);
+}
+input[value="matchlock"] + label,
+input[value="field"] + label {
+    border: 0.125rem solid var(--first-type);
+    color: var(--first-type);
+}
+[data-feature="matchlock"] .aaog-ignition-type::before,
+input[value="matchlock"] + label::before {
+    background-image: url("./../src/imagenes/matchlock.svg");
+}
+[data-feature="field"] .aaog-ignition-type::before,
+input[value="field"] + label::before {
+    background-image: url("./../src/imagenes/fieldcannot.svg");
+}
+[data-feature="wheellock"] .aaog-ignition-type,
+[data-feature="navy"] .aaog-ignition-type {
+    background-color: var(--second-type);
+}
+input[value="wheellock"] + label,
+input[value="navy"] + label {
+    border: 0.125rem solid var(--second-type);
+    color: var(--second-type);
+}
+[data-feature="wheellock"] .aaog-ignition-type::before,
+input[value="wheellock"] + label::before {
+    background-image: url("./../src/imagenes/wheellock.svg");
+}
+[data-feature="navy"] .aaog-ignition-type::before,
+input[value="navy"] + label::before {
+    background-image: url("./../src/imagenes/navycannon.svg");
+}
+[data-feature="flintlock"] .aaog-ignition-type,
+[data-feature="mortar"] .aaog-ignition-type {
+    background-color: var(--third-type);
+}
+input[value="flintlock"] + label,
+input[value="mortar"] + label {
+    border: 0.125rem solid var(--third-type);
+    color: var(--third-type);
+}
+[data-feature="flintlock"] .aaog-ignition-type::before,
+input[value="flintlock"] + label::before {
+    background-image: url("./../src/imagenes/flintlock.svg");
+}
+[data-feature="mortar"] .aaog-ignition-type::before,
+input[value="mortar"] + label::before {
+    background-image: url("./../src/imagenes/mortar.svg")
+}
+[data-feature="percussion"] .aaog-ignition-type {
+    background-color: var(--fourth-type);
+}
+input[value="percussion"] + label {
+    border: 0.125rem solid var(--fourth-type);
+    color: var(--fourth-type);
+}
+[data-feature="percussion"] .aaog-ignition-type::before,
+input[value="percussion"] + label::before {
+    background-image: url("./../src/imagenes/percussion.svg")
+}
+.aaog-product-feature {
+    border-bottom: var(--border-width) solid var(--black-color);
+    padding-bottom: var(--up-down-gap);
+}
+input[type="radio"]:checked + label {
+    color: var(--white-color);
+}
+input[value="matchlock"]:checked + label,
+input[value="field"]:checked + label {
+    background-color: var(--first-type);
+}
+input[value="wheellock"]:checked + label,
+input[value="navy"]:checked + label {
+    background-color: var(--second-type);
+}
+input[value="flintlock"]:checked + label,
+input[value="mortar"]:checked + label {
+    background-color: var(--third-type);
+}
+input[value="percussion"]:checked + label {
+    background-color: var(--fourth-type);
+}
+input[type="radio"]:focus-visible + label {
+    border-radius: 2rem;
+    box-shadow: 0.125rem 0.125rem 0.125rem var(--black-color);
+}
+#options {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#options .aaog-input-wrapper {
+    flex-basis: 49%;
+    text-align: center;
+}
