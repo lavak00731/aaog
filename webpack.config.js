@@ -244,6 +244,22 @@ const config = {
       chunks: ['product'],
       inject: 'body'
     }),
+    new HtmlWebpackPlugin({
+      template: "./es/productos/pistolas/pistolakentuckypercusion.html",
+      filename: "pistolakentuckypercusion.html",
+      filePath: folderPathEs,      
+      minify: false,
+      chunks: ['product'],
+      inject: 'body'
+    }),
+    new HtmlWebpackPlugin({
+      template: "./en/productos/pistolas/pistolakentuckypercusioneng.html",
+      filename: "pistolakentuckypercusioneng.html",
+      filePath: folderPathEn,
+      minify: false,
+      chunks: ['product'],
+      inject: 'body'
+    }),
     new MiniCssExtractPlugin(),
     // Add your plugins here
     // Learn more about plugins from https://webpack.js.org/configuration/plugins/

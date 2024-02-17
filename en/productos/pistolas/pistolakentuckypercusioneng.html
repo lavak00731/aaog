@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Percussion Kentucky Pistol - Armas Antiguas Osvaldo Gatto</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/fontfiles.html') %> <%=
+    require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/favicon.html') %>
+  </head>
+  <body>
+    <a href="#main" class="aaog-skip-link">Skip to Content</a>
+    <div class="aaog-gral-wrapper">
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/headereng.html') %>
+      <main id="main">
+        <article>
+          <nav aria-describedby="breadcrum" class="aaog-breadcrum">
+            <p hidden="hidden" id="breadcrum">
+              Navigation to this page
+            </p>
+            <ul>
+              <li><a href="/">Home</a></li>
+              <li><a href="pistolasyfusileseng.html">Pistols and Rifles</a></li>
+              <li>
+                <a href="pistolakentuckypercusioneng.html" aria-current="page">Percussion Kentucky Pistol</a>
+              </li>
+            </ul>
+          </nav>
+          <h1>Percussion Kentucky Pistol <span class="aaog-code">Code: PP001</span></h1>
+          <ul id="product-gallery" class="aaog-image-gallery-wrapper">
+            <li>
+              <a
+              data-pswp-width="483"
+              data-pswp-height="272"
+                role="button"
+                href="src/imagenes/productos/pistolasyfusiles/pistolakentuckypercusion/pp001_imagen.jpg"
+              >
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolakentuckypercusion/pp001_imagen.jpg"
+                    alt="Kentucky percussion pistol with side view of the platin"
+                  />
+                  <span class="aaog-visuallyhidden"
+                    >Open Image in Detail</span
+                  >
+                </figure>
+              </a>
+            </li>           
+          </ul>
+          <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+          '/compartir.html') %>
+          <div class="aaog-product-data-divider">
+            <section
+              class="aaog-product-description"
+              aria-labelledby="description"
+            >
+              <h2 id="description">Description</h2>
+              <p>
+                Kentucky pistol with percussion. c. 1830. This is the same pistol with spark that pioneered the independence of the United States, later transformed to incorporate the piston or percussion system, which made it more reliable and more accurate, although
+                 it continued to retain its fame with the previous system, with flint.
+              </p>             
+            </section>
+            <section class="aaog-product-data" aria-labelledby="data">
+              <h2 id="data">Features</h2>
+              <table class="aaog-product-table">
+                <caption>
+                    Percussion Kentucky Pistol
+                </caption>
+                <tr>
+                  <th scope="row">Barrel:</th>
+                  <td>
+                    steel, octagonal outside, knurled inside
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Caliber:</th>
+                  <td>45 or 50</td>
+                </tr>
+                <tr>
+                  <th scope="row">Lock:</th>
+                  <td>Percussion</td>
+                </tr>
+                <tr>
+                  <th scope="row">Carriage:</th>
+                  <td>walnut</td>
+                </tr>
+                <tr>
+                  <th scope="row">Guards:</th>
+                  <td>polished brass</td>
+                </tr>                
+              </table>
+              <div class="aaog-qr-wrapper">
+                <img src="" alt="" id="qr">
+              </div>
+            </section>
+          </div>
+          <div class="aaog-btn-wrapper">
+            <button type="button" class="aaog-btn aaog-modal-trigger">Ask a quotation</button>
+          </div>
+          <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/modal.html') %>          
+        </article>
+      </main>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/footereng.html') %>
+    </div>
+  </body>
+</html>

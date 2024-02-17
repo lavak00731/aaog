@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pistola Kentucky - Armas Antiguas Osvaldo Gatto</title>
+    <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/fontfiles.html') %> <%=
+    require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+    '/favicon.html') %>
+  </head>
+  <body>
+    <a href="#main" class="aaog-skip-link">Ir al contenido</a>
+    <div class="aaog-gral-wrapper">
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/header.html') %>
+      <main id="main">
+        <article>
+          <nav aria-describedby="breadcrum" class="aaog-breadcrum">
+            <p hidden="hidden" id="breadcrum">
+              Navegaci&oacute;n hasta esta p&aacute;gina
+            </p>
+            <ul>
+              <li><a href="/">Inicio</a></li>
+              <li><a href="pistolasyfusiles.html">Pistolas y Fusiles</a></li>
+              <li>
+                <a href="pistolakentuckypercusion.html" aria-current="page">Pistola Kentucky Percusi&oacute;n</a>
+              </li>
+            </ul>
+          </nav>
+          <h1>Pistola Kentucky Percusi&oacute;n <span class="aaog-code">Código: PP001</span></h1>
+          <ul id="product-gallery" class="aaog-image-gallery-wrapper">
+            <li>
+              <a
+                data-pswp-width="483"
+                data-pswp-height="272"
+                role="button"
+                href="src/imagenes/productos/pistolasyfusiles/pistolakentuckypercusion/pp001_imagen.jpg"
+              >
+                <figure>
+                  <img
+                    loading="lazy"
+                    src="src/imagenes/productos/pistolasyfusiles/pistolakentuckypercusion/pp001_imagen.jpg"
+                    alt="Pistola Kentucky a percusi&oacute;n vista lateral de la platina"
+                  />
+                  <span class="aaog-visuallyhidden"
+                    >Abrir la imagen en m&aacute;s en detalle</span
+                  >
+                </figure>
+              </a>
+            </li>            
+          </ul>
+          <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+          '/compartir.html') %>
+          <div class="aaog-product-data-divider">
+            <section
+              class="aaog-product-description"
+              aria-labelledby="description"
+            >
+              <h2 id="description">Descripci&oacute;n</h2>
+              <p>
+                Pistola llamada de Kentucky en percusión. c. 1830 se trata de la misma
+                 pistola a chispa pionera en la independencia de los Estados Unidos transformada
+                  luego para incorporar el sistema de pistón o percusión lo que la hizo más fiable
+                   más precisa aunque siguió conservando su fama con el sistema anterior, a pedernal.
+              </p>              
+            </section>
+            <section class="aaog-product-data" aria-labelledby="data">
+              <h2 id="data">Caracter&iacute;sticas</h2>
+              <table class="aaog-product-table">
+                <caption>
+                    Pistola Kentucky Percusi&oacute;n
+                </caption>
+                <tr>
+                  <th scope="row">Ca&ntilde;on:</th>
+                  <td>
+                    de acero, exterior octogonal, interior estriado 
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">Calibre:</th>
+                  <td>45 o 50</td>
+                </tr>
+                <tr>
+                  <th scope="row">Llave:</th>
+                  <td>de percusi&oacute;n</td>
+                </tr>
+                <tr>
+                  <th scope="row">Culata:</th>
+                  <td>de Nogal pulido y terminado al aceite</td>
+                </tr>
+                <tr>
+                  <th scope="row">Guarniciones:</th>
+                  <td>de lat&oacute;n</td>
+                </tr>
+              </table>
+              <div class="aaog-qr-wrapper">
+                <img src="" alt="" id="qr">
+              </div>
+            </section>
+          </div>
+          <div class="aaog-btn-wrapper">
+            <button type="button" class="aaog-btn aaog-modal-trigger">Consultar</button>
+          </div>
+          <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/modal.html') %>          
+        </article>
+      </main>
+      <%= require("fs").readFileSync(htmlWebpackPlugin.options.filePath +
+      '/footer.html') %>
+    </div>
+  </body>
+</html>
