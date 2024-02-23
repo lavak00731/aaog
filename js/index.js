@@ -43,7 +43,7 @@ const templateDrawing = ({date, _embedded, title, excerpt, link}) => {
     }
     
     const template =  `<li class="aaog-news-container">
-                            <figure><img loading="lazy" src="${_embedded["wp:featuredmedia"][0]['link']}" alt=""></figure>
+                            <figure><img src="${_embedded["wp:featuredmedia"][0]['link']}" alt=""></figure>
                             <div class="aaog-news--text-wrapper">
                                 <h3><a href="">${title.rendered}</a></h3>
                                 <p class="new-date">${published}: <strong>${paDate}</strong></p>
