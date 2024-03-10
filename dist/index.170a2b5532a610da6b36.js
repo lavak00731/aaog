@@ -4164,7 +4164,7 @@ var getNews = /*#__PURE__*/function () {
       while (1) switch (_context.prev = _context.next) {
         case 0:
           _context.prev = 0;
-          url = 'https://esteticagabrielagatto.com/wp-json/wp/v2/posts?_embed&per_page=5';
+          url = 'https://esteticagabrielagatto.com/wp-json/wp/v2/postss?_embed&per_page=5';
           _context.next = 4;
           return fetch(url);
         case 4:
