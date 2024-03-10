@@ -4223,7 +4223,7 @@ var templateDrawing = function templateDrawing(_ref3) {
 };
 var renderNews = function renderNews(news) {
   var newsHolder = document.querySelector('#newsSection .aaog-news-wrapper');
-  if (news) {
+  if (news.length > 0) {
     news.forEach(function (element) {
       var nw = templateDrawing(element);
       newsHolder.insertAdjacentHTML('beforeend', nw);
