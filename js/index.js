@@ -56,11 +56,12 @@ const templateDrawing = ({date, _embedded, title, excerpt, link}) => {
 
 const renderNews = (news) => {
     const newsHolder = document.querySelector('#newsSection .aaog-news-wrapper');
-    news.forEach(element => {
-        const nw = templateDrawing(element);
-        newsHolder.insertAdjacentHTML('beforeend', nw);
-    });
-    
+    if(news) {
+        news.forEach(element => {
+            const nw = templateDrawing(element);
+            newsHolder.insertAdjacentHTML('beforeend', nw);
+        });
+    }       
 }
 
 const initHome = async () => {
