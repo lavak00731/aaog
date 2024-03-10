@@ -56,7 +56,7 @@ const templateDrawing = ({date, _embedded, title, excerpt, link}) => {
 
 const renderNews = (news) => {
     const newsHolder = document.querySelector('#newsSection .aaog-news-wrapper');
-    if(news) {
+    if(news.length > 0) {
         news.forEach(element => {
             const nw = templateDrawing(element);
             newsHolder.insertAdjacentHTML('beforeend', nw);
