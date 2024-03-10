@@ -5,7 +5,7 @@ import { Shared } from "./shared";
 Shared();
 const getNews = async () => {
     try {
-        const url = 'https://esteticagabrielagatto.com/wp-json/wp/v2/posts?_embed&per_page=5';
+        const url = 'https://esteticagabrielagatto.com/wp-json/wp/v2/postss?_embed&per_page=5';
         const response = await fetch(url);
         const jsonData = await response.json();
         return jsonData;
