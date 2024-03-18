@@ -67,17 +67,23 @@
     grid-row-end: 2;  
 }
 .aaog-image-gallery-wrapper li figure {
-    aspect-ratio: 1.6;
+    aspect-ratio: 1.5;
     overflow: hidden;
     background: var(--light-bg);
     border: var(--border-width) solid var(--black-color);
     border-radius: var(--border-radius);
     margin: 0;
+    position: relative;
 }
 .aaog-image-gallery-wrapper li img{
     object-fit: cover;
     width: 110%;
     height: auto;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+
 }
 .aaog-image-gallery-wrapper li a:hover,
 .aaog-image-gallery-wrapper li a:focus-visible {
